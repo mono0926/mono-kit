@@ -9,19 +9,6 @@
 import Foundation
 import APIKit
 
-class AuthManager {
-    private init() {}
-    static let shared = AuthManager()
-    var user: String = ""
-    var apiToken: String = ""
-    var authToken: String { return "\(user):\(apiToken)" }
-
-    func update(user: String, apiToken: String) {
-        self.user = user
-        self.apiToken = apiToken
-    }
-}
-
 protocol ApiRequest: Request {}
 
 extension ApiRequest {
@@ -34,5 +21,5 @@ protocol AuthenticatedRequest: ApiRequest {
 }
 
 extension AuthenticatedRequest {
-    var apiParameters: [String: String] { return ["auth_token": AuthManager.shared.authToken] }
+    var apiParameters: [String: String] { return ["auth_token": PinboardService.shared.authToken!] }
 }

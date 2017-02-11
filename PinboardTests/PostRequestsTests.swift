@@ -10,6 +10,7 @@ import XCTest
 import Lib
 import RxSwift
 import APIKit
+import SwiftyUserDefaults
 @testable import Pinboard
 
 class PostRequestsTests: XCTestCase {
@@ -26,7 +27,10 @@ class PostRequestsTests: XCTestCase {
     func testApiToken() {
         let expectation = self.expectation(description: #function)
 
-        AuthManager.shared.update(user: TestDataUtil.user, apiToken: TestDataUtil.apiToken)
+
+        Defaults[.user] = TestDataUtil.user
+        keychain[Keychain.apiTokenKey] = TestDataUtil.apiToken
+
         let request = PostRequests.Add(url: "https://mono0926.com", description: "monokit test", tags: ["test1, test2"])
         Session.shared.rx.response(request)
             .subscribe { event in
