@@ -54,9 +54,10 @@ public struct Logger {
     }
 
     private func doLog(_ message: @autoclosure () ->  Any, logType: OSLogType, functionName: StaticString, fileName: StaticString, lineNumber: Int) {
-        let logger = type(of: self)
-        let output = logger.buildOutput(message, logType: logType, functionName: functionName, fileName: fileName, lineNumber: lineNumber)
-        os_log("%@", log: logger.log, type: logType, output)
+        let staticSelf = type(of: self)
+        let log = staticSelf.log
+        let output = staticSelf.buildOutput(message, logType: logType, functionName: functionName, fileName: fileName, lineNumber: lineNumber)
+        os_log("%@", log: log, type: logType, output)
     }
 
     static func buildOutput(_ message: @autoclosure () ->  Any,
