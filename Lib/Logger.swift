@@ -29,6 +29,7 @@ extension OSLogType: CustomStringConvertible {
 
 /// @see https://developer.apple.com/reference/os/logging#1682426
 public struct Logger {
+    private static let log = OSLog(subsystem: "com.mono0926.monokit", category: "default")
 
     fileprivate init() {}
 
@@ -53,11 +54,40 @@ public struct Logger {
     }
 
     private func doLog(_ message: @autoclosure () ->  Any, logType: OSLogType, functionName: StaticString = #function, fileName: StaticString = #file, lineNumber: Int = #line) {
-        let log = OSLog(subsystem: "com.mono0926.monokit", category: "default")
-        os_log("[%@] %@",
-               log: log,
-               type: logType,
-               String(describing: logType), String(describing: message()))
+        let logger = type(of: self)
+        let output = logger.buildOutput(message, logType: logType, functionName: functionName, fileName: fileName, lineNumber: lineNumber)
+        os_log("%@", log: logger.log, type: logType, output)
+    }
+
+    static func buildOutput(_ message: @autoclosure () ->  Any,
+                             logType: OSLogType,
+                             functionName: StaticString = #function,
+                             fileName: StaticString = #file,
+                             lineNumber: Int = #line) -> String {
+        return "[\(logType)] [\(threadName)] [\((String(describing: fileName) as NSString).lastPathComponent):\(lineNumber)] \(functionName) > \(message())"
+    }
+
+    private static var threadName: String {
+        if Thread.isMainThread {
+            return "main"
+        }
+        else {
+            if let threadName = Thread.current.name, !threadName.isEmpty {
+                return threadName
+            }
+            else if let queueName = DispatchQueue.currentQueueLabel, !queueName.isEmpty {
+                return queueName
+            }
+            else {
+                return String(format: "[%p] ", Thread.current)
+            }
+        }
+    }
+}
+
+extension DispatchQueue {
+    public static var currentQueueLabel: String? {
+        return String(validatingUTF8: __dispatch_queue_get_label(nil))
     }
 }
 

@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import os.log
 @testable import Lib
 
 class LibTests: XCTestCase {
@@ -19,7 +20,12 @@ class LibTests: XCTestCase {
         super.tearDown()
     }
 
+    func testBuildOutput() {
+        XCTAssertEqual(Logger.buildOutput("(　´･‿･｀)", logType: .debug),
+                       "[🔹(debug)] [main] [LoggerTests.swift:24] testBuildOutput() > (　´･‿･｀)")
+    }
+
     func testDebug() {
-        logger.debug("test log")
+        logger.debug("出力テストは難しいのでとりあえずエラー起きなかったらOK(　´･‿･｀)")
     }
 }
