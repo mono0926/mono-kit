@@ -1,3 +1,4 @@
 github "ishkawa/APIKit"
 github "ikesyo/Himotoki"
 github "ReactiveX/RxSwift"
+github "drmohundro/SWXMLHash"

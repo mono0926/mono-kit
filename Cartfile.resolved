@@ -1,4 +1,5 @@
 github "ikesyo/Himotoki" "3.0.0"
 github "antitypical/Result" "3.1.0"
 github "ReactiveX/RxSwift" "3.2.0"
+github "drmohundro/SWXMLHash" "3.0.4"
 github "ishkawa/APIKit" "3.1.2"
