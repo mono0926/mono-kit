@@ -33,13 +33,6 @@ struct UserRequests {
             return ApiTokenResponse(xml: object as! XMLIndexer)
         }
 
-        var dataParser: DataParser { return XMLParser() }
-
-        func intercept(urlRequest: URLRequest) throws -> URLRequest {
-            logger.debug(urlRequest.debugDescription)
-            return urlRequest
-        }
-
         init(user: String, password: String) {
             self.user = user
             self.password = password

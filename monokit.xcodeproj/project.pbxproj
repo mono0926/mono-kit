@@ -62,6 +62,9 @@
 		FE59F4581E4F092C00843828 /* TestData.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE59F4571E4F092C00843828 /* TestData.plist */; };
 		FE59F4591E4F0C2900843828 /* Lib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F3DD1E4EDE9400843828 /* Lib.framework */; };
 		FE59F45B1E4F32D300843828 /* TestDataUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE59F45A1E4F32D300843828 /* TestDataUtil.swift */; };
+		FE59F45D1E4F33D400843828 /* PostRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE59F45C1E4F33D400843828 /* PostRequests.swift */; };
+		FE59F45F1E4F384400843828 /* Dictionary.extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE59F45E1E4F384400843828 /* Dictionary.extension.swift */; };
+		FE59F4611E4F390C00843828 /* PostRequestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE59F4601E4F390C00843828 /* PostRequestsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -219,6 +222,9 @@
 		FE59F4551E4F03B300843828 /* XMLParserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLParserTests.swift; sourceTree = "<group>"; };
 		FE59F4571E4F092C00843828 /* TestData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TestData.plist; sourceTree = "<group>"; };
 		FE59F45A1E4F32D300843828 /* TestDataUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDataUtil.swift; sourceTree = "<group>"; };
+		FE59F45C1E4F33D400843828 /* PostRequests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostRequests.swift; sourceTree = "<group>"; };
+		FE59F45E1E4F384400843828 /* Dictionary.extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary.extension.swift; sourceTree = "<group>"; };
+		FE59F4601E4F390C00843828 /* PostRequestsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostRequestsTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -427,6 +433,7 @@
 			isa = PBXGroup;
 			children = (
 				FE59F4381E4EF2BE00843828 /* RxSwift.extension.swift */,
+				FE59F45E1E4F384400843828 /* Dictionary.extension.swift */,
 			);
 			name = extensions;
 			sourceTree = "<group>";
@@ -472,6 +479,7 @@
 			children = (
 				FE59F43D1E4EF4C300843828 /* UserRequests.swift */,
 				FE59F4411E4EF54700843828 /* Request.extension.swift */,
+				FE59F45C1E4F33D400843828 /* PostRequests.swift */,
 			);
 			name = Request;
 			sourceTree = "<group>";
@@ -479,6 +487,7 @@
 		FE59F4431E4EF76300843828 /* Request */ = {
 			isa = PBXGroup;
 			children = (
+				FE59F4601E4F390C00843828 /* PostRequestsTests.swift */,
 				FE59F4441E4EF77300843828 /* UserRequestsTests.swift */,
 			);
 			name = Request;
@@ -915,6 +924,7 @@
 				FE59F4421E4EF54700843828 /* Request.extension.swift in Sources */,
 				FE59F43E1E4EF4C300843828 /* UserRequests.swift in Sources */,
 				FE59F44C1E4EFEFA00843828 /* XMLParser.swift in Sources */,
+				FE59F45D1E4F33D400843828 /* PostRequests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -925,6 +935,7 @@
 				FE59F4561E4F03B300843828 /* XMLParserTests.swift in Sources */,
 				FE59F45B1E4F32D300843828 /* TestDataUtil.swift in Sources */,
 				FE59F4451E4EF77300843828 /* UserRequestsTests.swift in Sources */,
+				FE59F4611E4F390C00843828 /* PostRequestsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -932,6 +943,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE59F45F1E4F384400843828 /* Dictionary.extension.swift in Sources */,
 				FE59F4391E4EF2BE00843828 /* RxSwift.extension.swift in Sources */,
 				FE59F42C1E4EE09200843828 /* Logger.swift in Sources */,
 			);
