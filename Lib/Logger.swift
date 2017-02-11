@@ -32,32 +32,32 @@ public struct Logger {
 
     fileprivate init() {}
 
-    public func info(_ message: @autoclosure () ->  String, functionName: StaticString = #function, fileName: StaticString = #file, lineNumber: Int = #line) {
+    public func info(_ message: @autoclosure () ->  Any, functionName: StaticString = #function, fileName: StaticString = #file, lineNumber: Int = #line) {
         doLog(message, logType: .info, functionName: functionName, fileName: fileName, lineNumber: lineNumber)
     }
 
-    public func debug(_ message: @autoclosure () ->  String, functionName: StaticString = #function, fileName: StaticString = #file, lineNumber: Int = #line) {
+    public func debug(_ message: @autoclosure () ->  Any, functionName: StaticString = #function, fileName: StaticString = #file, lineNumber: Int = #line) {
         doLog(message, logType: .debug, functionName: functionName, fileName: fileName, lineNumber: lineNumber)
     }
 
-    public func error(_ message: @autoclosure () ->  String, functionName: StaticString = #function, fileName: StaticString = #file, lineNumber: Int = #line) {
+    public func error(_ message: @autoclosure () ->  Any, functionName: StaticString = #function, fileName: StaticString = #file, lineNumber: Int = #line) {
         doLog(message, logType: .error, functionName: functionName, fileName: fileName, lineNumber: lineNumber)
     }
 
-    public func fault(_ message: @autoclosure () ->  String, functionName: StaticString = #function, fileName: StaticString = #file, lineNumber: Int = #line) {
+    public func fault(_ message: @autoclosure () ->  Any, functionName: StaticString = #function, fileName: StaticString = #file, lineNumber: Int = #line) {
         doLog(message, logType: .fault, functionName: functionName, fileName: fileName, lineNumber: lineNumber)
     }
 
-    public func `default`(_ message: @autoclosure () ->  String, functionName: StaticString = #function, fileName: StaticString = #file, lineNumber: Int = #line) {
+    public func `default`(_ message: @autoclosure () ->  Any, functionName: StaticString = #function, fileName: StaticString = #file, lineNumber: Int = #line) {
         doLog(message, logType: .default, functionName: functionName, fileName: fileName, lineNumber: lineNumber)
     }
 
-    private func doLog(_ message: @autoclosure () ->  String, logType: OSLogType, functionName: StaticString = #function, fileName: StaticString = #file, lineNumber: Int = #line) {
+    private func doLog(_ message: @autoclosure () ->  Any, logType: OSLogType, functionName: StaticString = #function, fileName: StaticString = #file, lineNumber: Int = #line) {
         let log = OSLog(subsystem: "com.mono0926.monokit", category: "default")
         os_log("[%@] %@",
                log: log,
                type: logType,
-               String(describing: logType), message())
+               String(describing: logType), String(describing: message()))
     }
 }
 
