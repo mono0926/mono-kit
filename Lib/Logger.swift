@@ -53,7 +53,7 @@ public struct Logger {
         doLog(message, logType: .default, functionName: functionName, fileName: fileName, lineNumber: lineNumber)
     }
 
-    private func doLog(_ message: @autoclosure () ->  Any, logType: OSLogType, functionName: StaticString = #function, fileName: StaticString = #file, lineNumber: Int = #line) {
+    private func doLog(_ message: @autoclosure () ->  Any, logType: OSLogType, functionName: StaticString, fileName: StaticString, lineNumber: Int) {
         let logger = type(of: self)
         let output = logger.buildOutput(message, logType: logType, functionName: functionName, fileName: fileName, lineNumber: lineNumber)
         os_log("%@", log: logger.log, type: logType, output)
@@ -61,9 +61,9 @@ public struct Logger {
 
     static func buildOutput(_ message: @autoclosure () ->  Any,
                              logType: OSLogType,
-                             functionName: StaticString = #function,
-                             fileName: StaticString = #file,
-                             lineNumber: Int = #line) -> String {
+                             functionName: StaticString,
+                             fileName: StaticString,
+                             lineNumber: Int) -> String {
         return "[\(logType)] [\(threadName)] [\((String(describing: fileName) as NSString).lastPathComponent):\(lineNumber)] \(functionName) > \(message())"
     }
 

@@ -21,8 +21,8 @@ class LibTests: XCTestCase {
     }
 
     func testBuildOutput() {
-        XCTAssertEqual(Logger.buildOutput("(　´･‿･｀)", logType: .debug),
-                       "[🔹(debug)] [main] [LoggerTests.swift:24] testBuildOutput() > (　´･‿･｀)")
+        XCTAssertEqual(Logger.buildOutput("(　´･‿･｀)", logType: .debug, functionName: "function_name", fileName: "foo/file_name", lineNumber: 11),
+                       "[🔹(debug)] [main] [file_name:11] function_name > (　´･‿･｀)")
     }
 
     func testDebug() {
