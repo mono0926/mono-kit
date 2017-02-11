@@ -56,6 +56,7 @@ public struct Logger {
     private func doLog(_ message: @autoclosure () ->  Any, logType: OSLogType, functionName: StaticString, fileName: StaticString, lineNumber: Int) {
         let staticSelf = type(of: self)
         let log = staticSelf.log
+        guard log.isEnabled(type: logType) else { return }
         let output = staticSelf.buildOutput(message, logType: logType, functionName: functionName, fileName: fileName, lineNumber: lineNumber)
         os_log("%@", log: log, type: logType, output)
     }
