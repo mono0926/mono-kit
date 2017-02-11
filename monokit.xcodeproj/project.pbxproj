@@ -84,6 +84,7 @@
 		FE59F47E1E4F4D0300843828 /* SVProgressHUD.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F47C1E4F4D0300843828 /* SVProgressHUD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FE59F4801E4F4D1500843828 /* Progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE59F47F1E4F4D1500843828 /* Progress.swift */; };
 		FE59F4811E4F4D2400843828 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F47C1E4F4D0300843828 /* SVProgressHUD.framework */; };
+		FE59F4841E4F53B900843828 /* Pinboard.extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE59F4831E4F53B900843828 /* Pinboard.extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -257,6 +258,7 @@
 		FE59F4781E4F483F00843828 /* Keychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
 		FE59F47C1E4F4D0300843828 /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = "<group>"; };
 		FE59F47F1E4F4D1500843828 /* Progress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Progress.swift; sourceTree = "<group>"; };
+		FE59F4831E4F53B900843828 /* Pinboard.extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pinboard.extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -402,6 +404,7 @@
 		FE432D651E4ED1C300E3F45E /* monokit */ = {
 			isa = PBXGroup;
 			children = (
+				FE59F4821E4F53AD00843828 /* Extension */,
 				FE59F4621E4F403900843828 /* View */,
 				FE432D661E4ED1C300E3F45E /* AppDelegate.swift */,
 				FE432D681E4ED1C300E3F45E /* ViewController.swift */,
@@ -590,6 +593,14 @@
 				FE59F4691E4F437500843828 /* PinboardService.swift */,
 			);
 			name = Service;
+			sourceTree = "<group>";
+		};
+		FE59F4821E4F53AD00843828 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FE59F4831E4F53B900843828 /* Pinboard.extension.swift */,
+			);
+			name = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -976,6 +987,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE432D691E4ED1C300E3F45E /* ViewController.swift in Sources */,
+				FE59F4841E4F53B900843828 /* Pinboard.extension.swift in Sources */,
 				FE432D671E4ED1C300E3F45E /* AppDelegate.swift in Sources */,
 				FE59F4651E4F405A00843828 /* PinboardController.swift in Sources */,
 			);

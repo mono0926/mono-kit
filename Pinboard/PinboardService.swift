@@ -12,6 +12,10 @@ import APIKit
 import SwiftyUserDefaults
 import Lib
 
+public enum PinboardError: Error {
+    case post(code: String)
+}
+
 public class PinboardService {
 
     private init() {}
@@ -38,6 +42,12 @@ public class PinboardService {
     public func post(url: String, tag: String) -> Observable<String> {
         return Session.shared.rx
             .response(PostRequests.Add(url: url, description: "TODO", tags: [tag, "🐶monoKit🐶"]))
-            .map { $0.code }
+            .flatMap { response -> Observable<String> in
+                let code = response.code
+                if code != "done" {
+                    return Observable<String>.error(PinboardError.post(code: code))
+                }
+                return Observable.just(code)
+        }
     }
 }

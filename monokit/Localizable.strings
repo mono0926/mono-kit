@@ -6,3 +6,4 @@
   Copyright © 2017 mono. All rights reserved.
 */
 "pinboard.title" = "Pinboard📌";
+"pinbaord.error_code_format" = "error occured(code: \(%@))";
