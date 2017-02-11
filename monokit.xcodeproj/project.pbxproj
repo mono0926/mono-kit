@@ -514,6 +514,7 @@
 				FE432D8D1E4ED1C300E3F45E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FE432D8E1E4ED1C300E3F45E /* Build configuration list for PBXNativeTarget "monokitTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +523,7 @@
 				FE432D901E4ED1C300E3F45E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FE432D911E4ED1C300E3F45E /* Build configuration list for PBXNativeTarget "monokitUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +532,7 @@
 				FE432D931E4ED1C300E3F45E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
