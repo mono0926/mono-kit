@@ -15,7 +15,6 @@
 		FE432D7C1E4ED1C300E3F45E /* monokitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE432D7B1E4ED1C300E3F45E /* monokitTests.swift */; };
 		FE432D871E4ED1C300E3F45E /* monokitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE432D861E4ED1C300E3F45E /* monokitUITests.swift */; };
 		FE59F3C31E4EDE2800843828 /* Pinboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F3BA1E4EDE2800843828 /* Pinboard.framework */; };
-		FE59F3CA1E4EDE2800843828 /* PinboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE59F3C91E4EDE2800843828 /* PinboardTests.swift */; };
 		FE59F3CC1E4EDE2800843828 /* Pinboard.h in Headers */ = {isa = PBXBuildFile; fileRef = FE59F3BC1E4EDE2800843828 /* Pinboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FE59F3CF1E4EDE2800843828 /* Pinboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F3BA1E4EDE2800843828 /* Pinboard.framework */; };
 		FE59F3D01E4EDE2800843828 /* Pinboard.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F3BA1E4EDE2800843828 /* Pinboard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -37,6 +36,29 @@
 		FE59F4281E4EDF1E00843828 /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F4221E4EDF1E00843828 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FE59F42C1E4EE09200843828 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE59F42B1E4EE09200843828 /* Logger.swift */; };
 		FE59F42F1E4EEB4D00843828 /* LoggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE59F42E1E4EEB4D00843828 /* LoggerTests.swift */; };
+		FE59F4321E4EF28600843828 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F4301E4EF28600843828 /* RxCocoa.framework */; };
+		FE59F4331E4EF28600843828 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F4301E4EF28600843828 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FE59F4341E4EF28600843828 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F4311E4EF28600843828 /* RxSwift.framework */; };
+		FE59F4351E4EF28600843828 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F4311E4EF28600843828 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FE59F4361E4EF2AC00843828 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F4311E4EF28600843828 /* RxSwift.framework */; };
+		FE59F4371E4EF2AF00843828 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F4301E4EF28600843828 /* RxCocoa.framework */; };
+		FE59F4391E4EF2BE00843828 /* RxSwift.extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE59F4381E4EF2BE00843828 /* RxSwift.extension.swift */; };
+		FE59F43A1E4EF2CF00843828 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F4201E4EDF1E00843828 /* APIKit.framework */; };
+		FE59F43B1E4EF2F400843828 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F4221E4EDF1E00843828 /* Result.framework */; };
+		FE59F43E1E4EF4C300843828 /* UserRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE59F43D1E4EF4C300843828 /* UserRequests.swift */; };
+		FE59F43F1E4EF51C00843828 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F4201E4EDF1E00843828 /* APIKit.framework */; };
+		FE59F4401E4EF51C00843828 /* Himotoki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F4211E4EDF1E00843828 /* Himotoki.framework */; };
+		FE59F4421E4EF54700843828 /* Request.extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE59F4411E4EF54700843828 /* Request.extension.swift */; };
+		FE59F4451E4EF77300843828 /* UserRequestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE59F4441E4EF77300843828 /* UserRequestsTests.swift */; };
+		FE59F4461E4EF7D300843828 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F4311E4EF28600843828 /* RxSwift.framework */; };
+		FE59F4471E4EF7D300843828 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F4201E4EDF1E00843828 /* APIKit.framework */; };
+		FE59F4481E4EF8A300843828 /* Lib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F3DD1E4EDE9400843828 /* Lib.framework */; };
+		FE59F4491E4EFB8700843828 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F4201E4EDF1E00843828 /* APIKit.framework */; };
+		FE59F44C1E4EFEFA00843828 /* XMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE59F44B1E4EFEFA00843828 /* XMLParser.swift */; };
+		FE59F4511E4F028200843828 /* SWXMLHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F4501E4F028200843828 /* SWXMLHash.framework */; };
+		FE59F4521E4F028200843828 /* SWXMLHash.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F4501E4F028200843828 /* SWXMLHash.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FE59F4531E4F02A000843828 /* SWXMLHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F4501E4F028200843828 /* SWXMLHash.framework */; };
+		FE59F4561E4F03B300843828 /* XMLParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE59F4551E4F03B300843828 /* XMLParserTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,10 +141,13 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				FE59F4331E4EF28600843828 /* RxCocoa.framework in Embed Frameworks */,
 				FE59F4241E4EDF1E00843828 /* APIKit.framework in Embed Frameworks */,
+				FE59F4351E4EF28600843828 /* RxSwift.framework in Embed Frameworks */,
 				FE59F3F31E4EDE9500843828 /* Lib.framework in Embed Frameworks */,
 				FE59F4281E4EDF1E00843828 /* Result.framework in Embed Frameworks */,
 				FE59F4261E4EDF1E00843828 /* Himotoki.framework in Embed Frameworks */,
+				FE59F4521E4F028200843828 /* SWXMLHash.framework in Embed Frameworks */,
 				FE59F3D01E4EDE2800843828 /* Pinboard.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -160,7 +185,6 @@
 		FE59F3BC1E4EDE2800843828 /* Pinboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pinboard.h; sourceTree = "<group>"; };
 		FE59F3BD1E4EDE2800843828 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE59F3C21E4EDE2800843828 /* PinboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PinboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE59F3C91E4EDE2800843828 /* PinboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinboardTests.swift; sourceTree = "<group>"; };
 		FE59F3CB1E4EDE2800843828 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE59F3DD1E4EDE9400843828 /* Lib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Lib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE59F3DF1E4EDE9500843828 /* Lib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Lib.h; sourceTree = "<group>"; };
@@ -180,6 +204,16 @@
 		FE59F4221E4EDF1E00843828 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		FE59F42B1E4EE09200843828 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		FE59F42E1E4EEB4D00843828 /* LoggerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggerTests.swift; sourceTree = "<group>"; };
+		FE59F4301E4EF28600843828 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		FE59F4311E4EF28600843828 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		FE59F4381E4EF2BE00843828 /* RxSwift.extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxSwift.extension.swift; sourceTree = "<group>"; };
+		FE59F43D1E4EF4C300843828 /* UserRequests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRequests.swift; sourceTree = "<group>"; };
+		FE59F4411E4EF54700843828 /* Request.extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.extension.swift; sourceTree = "<group>"; };
+		FE59F4441E4EF77300843828 /* UserRequestsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRequestsTests.swift; sourceTree = "<group>"; };
+		FE59F44B1E4EFEFA00843828 /* XMLParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLParser.swift; sourceTree = "<group>"; };
+		FE59F44E1E4F026700843828 /* SWXMLHash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SWXMLHash.framework; path = Carthage/Build/iOS/SWXMLHash.framework; sourceTree = "<group>"; };
+		FE59F4501E4F028200843828 /* SWXMLHash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SWXMLHash.framework; path = Carthage/Build/iOS/SWXMLHash.framework; sourceTree = "<group>"; };
+		FE59F4551E4F03B300843828 /* XMLParserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLParserTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,10 +221,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE59F4321E4EF28600843828 /* RxCocoa.framework in Frameworks */,
 				FE59F4231E4EDF1E00843828 /* APIKit.framework in Frameworks */,
+				FE59F4341E4EF28600843828 /* RxSwift.framework in Frameworks */,
 				FE59F3F21E4EDE9500843828 /* Lib.framework in Frameworks */,
 				FE59F4271E4EDF1E00843828 /* Result.framework in Frameworks */,
 				FE59F4251E4EDF1E00843828 /* Himotoki.framework in Frameworks */,
+				FE59F4511E4F028200843828 /* SWXMLHash.framework in Frameworks */,
 				FE59F3CF1E4EDE2800843828 /* Pinboard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,6 +250,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE59F43F1E4EF51C00843828 /* APIKit.framework in Frameworks */,
+				FE59F4401E4EF51C00843828 /* Himotoki.framework in Frameworks */,
+				FE59F4531E4F02A000843828 /* SWXMLHash.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,7 +260,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE59F4481E4EF8A300843828 /* Lib.framework in Frameworks */,
 				FE59F3C31E4EDE2800843828 /* Pinboard.framework in Frameworks */,
+				FE59F4461E4EF7D300843828 /* RxSwift.framework in Frameworks */,
+				FE59F4471E4EF7D300843828 /* APIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +271,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE59F4361E4EF2AC00843828 /* RxSwift.framework in Frameworks */,
+				FE59F4371E4EF2AF00843828 /* RxCocoa.framework in Frameworks */,
+				FE59F43A1E4EF2CF00843828 /* APIKit.framework in Frameworks */,
+				FE59F43B1E4EF2F400843828 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE59F3E61E4EDE9500843828 /* Lib.framework in Frameworks */,
+				FE59F4491E4EFB8700843828 /* APIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +307,9 @@
 		FE432D5A1E4ED1C300E3F45E = {
 			isa = PBXGroup;
 			children = (
+				FE59F4501E4F028200843828 /* SWXMLHash.framework */,
+				FE59F4301E4EF28600843828 /* RxCocoa.framework */,
+				FE59F4311E4EF28600843828 /* RxSwift.framework */,
 				FE59F4201E4EDF1E00843828 /* APIKit.framework */,
 				FE59F4211E4EDF1E00843828 /* Himotoki.framework */,
 				FE59F4221E4EDF1E00843828 /* Result.framework */,
@@ -272,6 +323,7 @@
 				FE59F4001E4EDEE100843828 /* PinboardLetter */,
 				FE59F4131E4EDEF500843828 /* PinboardStar */,
 				FE432D641E4ED1C300E3F45E /* Products */,
+				FE59F44D1E4F026700843828 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -325,6 +377,8 @@
 		FE59F3BB1E4EDE2800843828 /* Pinboard */ = {
 			isa = PBXGroup;
 			children = (
+				FE59F44A1E4EFEAA00843828 /* Parser */,
+				FE59F43C1E4EF31300843828 /* Request */,
 				FE59F3BC1E4EDE2800843828 /* Pinboard.h */,
 				FE59F3BD1E4EDE2800843828 /* Info.plist */,
 			);
@@ -334,7 +388,8 @@
 		FE59F3C81E4EDE2800843828 /* PinboardTests */ = {
 			isa = PBXGroup;
 			children = (
-				FE59F3C91E4EDE2800843828 /* PinboardTests.swift */,
+				FE59F4541E4F03A400843828 /* Parser */,
+				FE59F4431E4EF76300843828 /* Request */,
 				FE59F3CB1E4EDE2800843828 /* Info.plist */,
 			);
 			path = PinboardTests;
@@ -363,6 +418,7 @@
 		FE59F3FA1E4EDEAF00843828 /* extensions */ = {
 			isa = PBXGroup;
 			children = (
+				FE59F4381E4EF2BE00843828 /* RxSwift.extension.swift */,
 			);
 			name = extensions;
 			sourceTree = "<group>";
@@ -401,6 +457,47 @@
 				FE59F42E1E4EEB4D00843828 /* LoggerTests.swift */,
 			);
 			name = log;
+			sourceTree = "<group>";
+		};
+		FE59F43C1E4EF31300843828 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				FE59F43D1E4EF4C300843828 /* UserRequests.swift */,
+				FE59F4411E4EF54700843828 /* Request.extension.swift */,
+			);
+			name = Request;
+			sourceTree = "<group>";
+		};
+		FE59F4431E4EF76300843828 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				FE59F4441E4EF77300843828 /* UserRequestsTests.swift */,
+			);
+			name = Request;
+			sourceTree = "<group>";
+		};
+		FE59F44A1E4EFEAA00843828 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				FE59F44B1E4EFEFA00843828 /* XMLParser.swift */,
+			);
+			name = Parser;
+			sourceTree = "<group>";
+		};
+		FE59F44D1E4F026700843828 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE59F44E1E4F026700843828 /* SWXMLHash.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE59F4541E4F03A400843828 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				FE59F4551E4F03B300843828 /* XMLParserTests.swift */,
+			);
+			name = Parser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -623,6 +720,7 @@
 					FE59F3B91E4EDE2800843828 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 3RPN8GKB6G;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					FE59F3C11E4EDE2800843828 = {
@@ -763,6 +861,8 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Himotoki.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SWXMLHash.framework",
 			);
 			name = Carthage;
 			outputPaths = (
@@ -803,6 +903,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE59F4421E4EF54700843828 /* Request.extension.swift in Sources */,
+				FE59F43E1E4EF4C300843828 /* UserRequests.swift in Sources */,
+				FE59F44C1E4EFEFA00843828 /* XMLParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -810,7 +913,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE59F3CA1E4EDE2800843828 /* PinboardTests.swift in Sources */,
+				FE59F4561E4F03B300843828 /* XMLParserTests.swift in Sources */,
+				FE59F4451E4EF77300843828 /* UserRequestsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -818,6 +922,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE59F4391E4EF2BE00843828 /* RxSwift.extension.swift in Sources */,
 				FE59F42C1E4EE09200843828 /* Logger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1125,6 +1230,7 @@
 		FE59F3D21E4EDE2800843828 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1132,12 +1238,17 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Pinboard/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mono0926.Pinboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1147,6 +1258,7 @@
 		FE59F3D31E4EDE2800843828 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1154,6 +1266,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Pinboard/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1171,6 +1287,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 3RPN8GKB6G;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = PinboardTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mono0926.PinboardTests;
@@ -1185,6 +1305,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 3RPN8GKB6G;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = PinboardTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mono0926.PinboardTests;
@@ -1205,6 +1329,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Lib/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1229,6 +1357,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Lib/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1246,6 +1378,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 3RPN8GKB6G;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = LibTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mono0926.LibTests;
@@ -1260,6 +1396,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 3RPN8GKB6G;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = LibTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mono0926.LibTests;
