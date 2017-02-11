@@ -14,16 +14,6 @@ import APIKit
 
 class UserRequestsTests: XCTestCase {
     private let disposeBag = DisposeBag()
-    private let testData = NSDictionary(contentsOfFile: Bundle(for: UserRequestsTests.self).path(forResource: "TestData", ofType: "plist")!)!
-    private lazy var user: String = { [unowned self] in
-        return self.testData["user"] as! String
-        }()
-    private lazy var password: String = { [unowned self] in
-        return self.testData["password"] as! String
-        }()
-    private lazy var apiToken: String = { [unowned self] in
-        return self.testData["api_token"] as! String
-        }()
 
     override func setUp() {
         super.setUp()
@@ -36,7 +26,7 @@ class UserRequestsTests: XCTestCase {
     func testApiToken() {
         let expectation = self.expectation(description: #function)
 
-        let request = UserRequests.ApiToken(user: user, password: password)
+        let request = UserRequests.ApiToken(user: TestDataUtil.user, password: TestDataUtil.password)
         Session.shared.rx.response(request)
             .subscribe { event in
                 switch event {
@@ -44,7 +34,7 @@ class UserRequestsTests: XCTestCase {
                     XCTFail(String(describing: error))
                 case .next(let element):
                     logger.debug(element)
-                    XCTAssertEqual(element.result, self.apiToken)
+                    XCTAssertEqual(element.result, TestDataUtil.apiToken)
                 case .completed:
                     expectation.fulfill()
                 }

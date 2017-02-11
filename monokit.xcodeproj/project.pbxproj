@@ -61,6 +61,7 @@
 		FE59F4561E4F03B300843828 /* XMLParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE59F4551E4F03B300843828 /* XMLParserTests.swift */; };
 		FE59F4581E4F092C00843828 /* TestData.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE59F4571E4F092C00843828 /* TestData.plist */; };
 		FE59F4591E4F0C2900843828 /* Lib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F3DD1E4EDE9400843828 /* Lib.framework */; };
+		FE59F45B1E4F32D300843828 /* TestDataUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE59F45A1E4F32D300843828 /* TestDataUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -217,6 +218,7 @@
 		FE59F4501E4F028200843828 /* SWXMLHash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SWXMLHash.framework; path = Carthage/Build/iOS/SWXMLHash.framework; sourceTree = "<group>"; };
 		FE59F4551E4F03B300843828 /* XMLParserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLParserTests.swift; sourceTree = "<group>"; };
 		FE59F4571E4F092C00843828 /* TestData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TestData.plist; sourceTree = "<group>"; };
+		FE59F45A1E4F32D300843828 /* TestDataUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDataUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -396,6 +398,7 @@
 				FE59F4431E4EF76300843828 /* Request */,
 				FE59F3CB1E4EDE2800843828 /* Info.plist */,
 				FE59F4571E4F092C00843828 /* TestData.plist */,
+				FE59F45A1E4F32D300843828 /* TestDataUtil.swift */,
 			);
 			path = PinboardTests;
 			sourceTree = "<group>";
@@ -920,6 +923,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE59F4561E4F03B300843828 /* XMLParserTests.swift in Sources */,
+				FE59F45B1E4F32D300843828 /* TestDataUtil.swift in Sources */,
 				FE59F4451E4EF77300843828 /* UserRequestsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
