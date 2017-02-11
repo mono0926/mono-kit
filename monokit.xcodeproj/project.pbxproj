@@ -59,6 +59,8 @@
 		FE59F4521E4F028200843828 /* SWXMLHash.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F4501E4F028200843828 /* SWXMLHash.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FE59F4531E4F02A000843828 /* SWXMLHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F4501E4F028200843828 /* SWXMLHash.framework */; };
 		FE59F4561E4F03B300843828 /* XMLParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE59F4551E4F03B300843828 /* XMLParserTests.swift */; };
+		FE59F4581E4F092C00843828 /* TestData.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE59F4571E4F092C00843828 /* TestData.plist */; };
+		FE59F4591E4F0C2900843828 /* Lib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F3DD1E4EDE9400843828 /* Lib.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -214,6 +216,7 @@
 		FE59F44E1E4F026700843828 /* SWXMLHash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SWXMLHash.framework; path = Carthage/Build/iOS/SWXMLHash.framework; sourceTree = "<group>"; };
 		FE59F4501E4F028200843828 /* SWXMLHash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SWXMLHash.framework; path = Carthage/Build/iOS/SWXMLHash.framework; sourceTree = "<group>"; };
 		FE59F4551E4F03B300843828 /* XMLParserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLParserTests.swift; sourceTree = "<group>"; };
+		FE59F4571E4F092C00843828 /* TestData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TestData.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,6 +253,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE59F4591E4F0C2900843828 /* Lib.framework in Frameworks */,
 				FE59F43F1E4EF51C00843828 /* APIKit.framework in Frameworks */,
 				FE59F4401E4EF51C00843828 /* Himotoki.framework in Frameworks */,
 				FE59F4531E4F02A000843828 /* SWXMLHash.framework in Frameworks */,
@@ -391,6 +395,7 @@
 				FE59F4541E4F03A400843828 /* Parser */,
 				FE59F4431E4EF76300843828 /* Request */,
 				FE59F3CB1E4EDE2800843828 /* Info.plist */,
+				FE59F4571E4F092C00843828 /* TestData.plist */,
 			);
 			path = PinboardTests;
 			sourceTree = "<group>";
@@ -815,6 +820,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE59F4581E4F092C00843828 /* TestData.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
