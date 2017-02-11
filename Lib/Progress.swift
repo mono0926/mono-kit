@@ -10,6 +10,7 @@ import Foundation
 import SVProgressHUD
 
 public struct Progress {
+    private init() {}
     public static func show() {
         SVProgressHUD.show()
     }
