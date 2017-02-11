@@ -14,6 +14,29 @@
 		FE432D711E4ED1C300E3F45E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE432D6F1E4ED1C300E3F45E /* LaunchScreen.storyboard */; };
 		FE432D7C1E4ED1C300E3F45E /* monokitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE432D7B1E4ED1C300E3F45E /* monokitTests.swift */; };
 		FE432D871E4ED1C300E3F45E /* monokitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE432D861E4ED1C300E3F45E /* monokitUITests.swift */; };
+		FE59F3C31E4EDE2800843828 /* Pinboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F3BA1E4EDE2800843828 /* Pinboard.framework */; };
+		FE59F3CA1E4EDE2800843828 /* PinboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE59F3C91E4EDE2800843828 /* PinboardTests.swift */; };
+		FE59F3CC1E4EDE2800843828 /* Pinboard.h in Headers */ = {isa = PBXBuildFile; fileRef = FE59F3BC1E4EDE2800843828 /* Pinboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE59F3CF1E4EDE2800843828 /* Pinboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F3BA1E4EDE2800843828 /* Pinboard.framework */; };
+		FE59F3D01E4EDE2800843828 /* Pinboard.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F3BA1E4EDE2800843828 /* Pinboard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FE59F3E61E4EDE9500843828 /* Lib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F3DD1E4EDE9400843828 /* Lib.framework */; };
+		FE59F3EF1E4EDE9500843828 /* Lib.h in Headers */ = {isa = PBXBuildFile; fileRef = FE59F3DF1E4EDE9500843828 /* Lib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE59F3F21E4EDE9500843828 /* Lib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F3DD1E4EDE9400843828 /* Lib.framework */; };
+		FE59F3F31E4EDE9500843828 /* Lib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F3DD1E4EDE9400843828 /* Lib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FE59F4021E4EDEE100843828 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE59F4011E4EDEE100843828 /* ShareViewController.swift */; };
+		FE59F4051E4EDEE100843828 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE59F4031E4EDEE100843828 /* MainInterface.storyboard */; };
+		FE59F4091E4EDEE100843828 /* PinboardLetter.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FE59F3FF1E4EDEE100843828 /* PinboardLetter.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FE59F4151E4EDEF500843828 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE59F4141E4EDEF500843828 /* ShareViewController.swift */; };
+		FE59F4181E4EDEF500843828 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE59F4161E4EDEF500843828 /* MainInterface.storyboard */; };
+		FE59F41C1E4EDEF500843828 /* PinboardStar.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FE59F4121E4EDEF500843828 /* PinboardStar.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FE59F4231E4EDF1E00843828 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F4201E4EDF1E00843828 /* APIKit.framework */; };
+		FE59F4241E4EDF1E00843828 /* APIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F4201E4EDF1E00843828 /* APIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FE59F4251E4EDF1E00843828 /* Himotoki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F4211E4EDF1E00843828 /* Himotoki.framework */; };
+		FE59F4261E4EDF1E00843828 /* Himotoki.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F4211E4EDF1E00843828 /* Himotoki.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FE59F4271E4EDF1E00843828 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F4221E4EDF1E00843828 /* Result.framework */; };
+		FE59F4281E4EDF1E00843828 /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F4221E4EDF1E00843828 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FE59F42C1E4EE09200843828 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE59F42B1E4EE09200843828 /* Logger.swift */; };
+		FE59F42F1E4EEB4D00843828 /* LoggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE59F42E1E4EEB4D00843828 /* LoggerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +54,93 @@
 			remoteGlobalIDString = FE432D621E4ED1C300E3F45E;
 			remoteInfo = monokit;
 		};
+		FE59F3C41E4EDE2800843828 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE432D5B1E4ED1C300E3F45E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE59F3B91E4EDE2800843828;
+			remoteInfo = Pinboard;
+		};
+		FE59F3C61E4EDE2800843828 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE432D5B1E4ED1C300E3F45E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE432D621E4ED1C300E3F45E;
+			remoteInfo = monokit;
+		};
+		FE59F3CD1E4EDE2800843828 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE432D5B1E4ED1C300E3F45E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE59F3B91E4EDE2800843828;
+			remoteInfo = Pinboard;
+		};
+		FE59F3E71E4EDE9500843828 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE432D5B1E4ED1C300E3F45E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE59F3DC1E4EDE9400843828;
+			remoteInfo = Lib;
+		};
+		FE59F3E91E4EDE9500843828 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE432D5B1E4ED1C300E3F45E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE432D621E4ED1C300E3F45E;
+			remoteInfo = monokit;
+		};
+		FE59F3F01E4EDE9500843828 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE432D5B1E4ED1C300E3F45E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE59F3DC1E4EDE9400843828;
+			remoteInfo = Lib;
+		};
+		FE59F4071E4EDEE100843828 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE432D5B1E4ED1C300E3F45E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE59F3FE1E4EDEE100843828;
+			remoteInfo = PinboardLetter;
+		};
+		FE59F41A1E4EDEF500843828 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE432D5B1E4ED1C300E3F45E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE59F4111E4EDEF500843828;
+			remoteInfo = PinboardStar;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FE59F3D41E4EDE2800843828 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FE59F4241E4EDF1E00843828 /* APIKit.framework in Embed Frameworks */,
+				FE59F3F31E4EDE9500843828 /* Lib.framework in Embed Frameworks */,
+				FE59F4281E4EDF1E00843828 /* Result.framework in Embed Frameworks */,
+				FE59F4261E4EDF1E00843828 /* Himotoki.framework in Embed Frameworks */,
+				FE59F3D01E4EDE2800843828 /* Pinboard.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE59F40D1E4EDEE100843828 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FE59F4091E4EDEE100843828 /* PinboardLetter.appex in Embed App Extensions */,
+				FE59F41C1E4EDEF500843828 /* PinboardStar.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FE432D631E4ED1C300E3F45E /* monokit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = monokit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +156,30 @@
 		FE432D821E4ED1C300E3F45E /* monokitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = monokitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE432D861E4ED1C300E3F45E /* monokitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = monokitUITests.swift; sourceTree = "<group>"; };
 		FE432D881E4ED1C300E3F45E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE59F3BA1E4EDE2800843828 /* Pinboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pinboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE59F3BC1E4EDE2800843828 /* Pinboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pinboard.h; sourceTree = "<group>"; };
+		FE59F3BD1E4EDE2800843828 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE59F3C21E4EDE2800843828 /* PinboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PinboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE59F3C91E4EDE2800843828 /* PinboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinboardTests.swift; sourceTree = "<group>"; };
+		FE59F3CB1E4EDE2800843828 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE59F3DD1E4EDE9400843828 /* Lib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Lib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE59F3DF1E4EDE9500843828 /* Lib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Lib.h; sourceTree = "<group>"; };
+		FE59F3E01E4EDE9500843828 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE59F3E51E4EDE9500843828 /* LibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE59F3EE1E4EDE9500843828 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE59F3FF1E4EDEE100843828 /* PinboardLetter.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PinboardLetter.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE59F4011E4EDEE100843828 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		FE59F4041E4EDEE100843828 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		FE59F4061E4EDEE100843828 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE59F4121E4EDEF500843828 /* PinboardStar.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PinboardStar.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE59F4141E4EDEF500843828 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		FE59F4171E4EDEF500843828 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		FE59F4191E4EDEF500843828 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE59F4201E4EDF1E00843828 /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
+		FE59F4211E4EDF1E00843828 /* Himotoki.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Himotoki.framework; path = Carthage/Build/iOS/Himotoki.framework; sourceTree = "<group>"; };
+		FE59F4221E4EDF1E00843828 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		FE59F42B1E4EE09200843828 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		FE59F42E1E4EEB4D00843828 /* LoggerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +187,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE59F4231E4EDF1E00843828 /* APIKit.framework in Frameworks */,
+				FE59F3F21E4EDE9500843828 /* Lib.framework in Frameworks */,
+				FE59F4271E4EDF1E00843828 /* Result.framework in Frameworks */,
+				FE59F4251E4EDF1E00843828 /* Himotoki.framework in Frameworks */,
+				FE59F3CF1E4EDE2800843828 /* Pinboard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,15 +209,68 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FE59F3B61E4EDE2800843828 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE59F3BF1E4EDE2800843828 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE59F3C31E4EDE2800843828 /* Pinboard.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE59F3D91E4EDE9400843828 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE59F3E21E4EDE9500843828 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE59F3E61E4EDE9500843828 /* Lib.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE59F3FC1E4EDEE100843828 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE59F40F1E4EDEF500843828 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		FE432D5A1E4ED1C300E3F45E = {
 			isa = PBXGroup;
 			children = (
+				FE59F4201E4EDF1E00843828 /* APIKit.framework */,
+				FE59F4211E4EDF1E00843828 /* Himotoki.framework */,
+				FE59F4221E4EDF1E00843828 /* Result.framework */,
 				FE432D651E4ED1C300E3F45E /* monokit */,
 				FE432D7A1E4ED1C300E3F45E /* monokitTests */,
 				FE432D851E4ED1C300E3F45E /* monokitUITests */,
+				FE59F3BB1E4EDE2800843828 /* Pinboard */,
+				FE59F3C81E4EDE2800843828 /* PinboardTests */,
+				FE59F3DE1E4EDE9500843828 /* Lib */,
+				FE59F3EB1E4EDE9500843828 /* LibTests */,
+				FE59F4001E4EDEE100843828 /* PinboardLetter */,
+				FE59F4131E4EDEF500843828 /* PinboardStar */,
 				FE432D641E4ED1C300E3F45E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +281,12 @@
 				FE432D631E4ED1C300E3F45E /* monokit.app */,
 				FE432D771E4ED1C300E3F45E /* monokitTests.xctest */,
 				FE432D821E4ED1C300E3F45E /* monokitUITests.xctest */,
+				FE59F3BA1E4EDE2800843828 /* Pinboard.framework */,
+				FE59F3C21E4EDE2800843828 /* PinboardTests.xctest */,
+				FE59F3DD1E4EDE9400843828 /* Lib.framework */,
+				FE59F3E51E4EDE9500843828 /* LibTests.xctest */,
+				FE59F3FF1E4EDEE100843828 /* PinboardLetter.appex */,
+				FE59F4121E4EDEF500843828 /* PinboardStar.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,7 +322,107 @@
 			path = monokitUITests;
 			sourceTree = "<group>";
 		};
+		FE59F3BB1E4EDE2800843828 /* Pinboard */ = {
+			isa = PBXGroup;
+			children = (
+				FE59F3BC1E4EDE2800843828 /* Pinboard.h */,
+				FE59F3BD1E4EDE2800843828 /* Info.plist */,
+			);
+			path = Pinboard;
+			sourceTree = "<group>";
+		};
+		FE59F3C81E4EDE2800843828 /* PinboardTests */ = {
+			isa = PBXGroup;
+			children = (
+				FE59F3C91E4EDE2800843828 /* PinboardTests.swift */,
+				FE59F3CB1E4EDE2800843828 /* Info.plist */,
+			);
+			path = PinboardTests;
+			sourceTree = "<group>";
+		};
+		FE59F3DE1E4EDE9500843828 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				FE59F42A1E4EE08800843828 /* log */,
+				FE59F3FA1E4EDEAF00843828 /* extensions */,
+				FE59F3DF1E4EDE9500843828 /* Lib.h */,
+				FE59F3E01E4EDE9500843828 /* Info.plist */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		FE59F3EB1E4EDE9500843828 /* LibTests */ = {
+			isa = PBXGroup;
+			children = (
+				FE59F42D1E4EEB3600843828 /* log */,
+				FE59F3EE1E4EDE9500843828 /* Info.plist */,
+			);
+			path = LibTests;
+			sourceTree = "<group>";
+		};
+		FE59F3FA1E4EDEAF00843828 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = extensions;
+			sourceTree = "<group>";
+		};
+		FE59F4001E4EDEE100843828 /* PinboardLetter */ = {
+			isa = PBXGroup;
+			children = (
+				FE59F4011E4EDEE100843828 /* ShareViewController.swift */,
+				FE59F4031E4EDEE100843828 /* MainInterface.storyboard */,
+				FE59F4061E4EDEE100843828 /* Info.plist */,
+			);
+			path = PinboardLetter;
+			sourceTree = "<group>";
+		};
+		FE59F4131E4EDEF500843828 /* PinboardStar */ = {
+			isa = PBXGroup;
+			children = (
+				FE59F4141E4EDEF500843828 /* ShareViewController.swift */,
+				FE59F4161E4EDEF500843828 /* MainInterface.storyboard */,
+				FE59F4191E4EDEF500843828 /* Info.plist */,
+			);
+			path = PinboardStar;
+			sourceTree = "<group>";
+		};
+		FE59F42A1E4EE08800843828 /* log */ = {
+			isa = PBXGroup;
+			children = (
+				FE59F42B1E4EE09200843828 /* Logger.swift */,
+			);
+			name = log;
+			sourceTree = "<group>";
+		};
+		FE59F42D1E4EEB3600843828 /* log */ = {
+			isa = PBXGroup;
+			children = (
+				FE59F42E1E4EEB4D00843828 /* LoggerTests.swift */,
+			);
+			name = log;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FE59F3B71E4EDE2800843828 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE59F3CC1E4EDE2800843828 /* Pinboard.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE59F3DA1E4EDE9400843828 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE59F3EF1E4EDE9500843828 /* Lib.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		FE432D621E4ED1C300E3F45E /* monokit */ = {
@@ -135,10 +432,17 @@
 				FE432D5F1E4ED1C300E3F45E /* Sources */,
 				FE432D601E4ED1C300E3F45E /* Frameworks */,
 				FE432D611E4ED1C300E3F45E /* Resources */,
+				FE59F3D41E4EDE2800843828 /* Embed Frameworks */,
+				FE59F40D1E4EDEE100843828 /* Embed App Extensions */,
+				FE59F4291E4EDF4000843828 /* Carthage */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FE59F3CE1E4EDE2800843828 /* PBXTargetDependency */,
+				FE59F3F11E4EDE9500843828 /* PBXTargetDependency */,
+				FE59F4081E4EDEE100843828 /* PBXTargetDependency */,
+				FE59F41B1E4EDEF500843828 /* PBXTargetDependency */,
 			);
 			name = monokit;
 			productName = monokit;
@@ -181,6 +485,114 @@
 			productReference = FE432D821E4ED1C300E3F45E /* monokitUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		FE59F3B91E4EDE2800843828 /* Pinboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE59F3D11E4EDE2800843828 /* Build configuration list for PBXNativeTarget "Pinboard" */;
+			buildPhases = (
+				FE59F3B51E4EDE2800843828 /* Sources */,
+				FE59F3B61E4EDE2800843828 /* Frameworks */,
+				FE59F3B71E4EDE2800843828 /* Headers */,
+				FE59F3B81E4EDE2800843828 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pinboard;
+			productName = Pinboard;
+			productReference = FE59F3BA1E4EDE2800843828 /* Pinboard.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FE59F3C11E4EDE2800843828 /* PinboardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE59F3D51E4EDE2800843828 /* Build configuration list for PBXNativeTarget "PinboardTests" */;
+			buildPhases = (
+				FE59F3BE1E4EDE2800843828 /* Sources */,
+				FE59F3BF1E4EDE2800843828 /* Frameworks */,
+				FE59F3C01E4EDE2800843828 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE59F3C51E4EDE2800843828 /* PBXTargetDependency */,
+				FE59F3C71E4EDE2800843828 /* PBXTargetDependency */,
+			);
+			name = PinboardTests;
+			productName = PinboardTests;
+			productReference = FE59F3C21E4EDE2800843828 /* PinboardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FE59F3DC1E4EDE9400843828 /* Lib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE59F3F41E4EDE9500843828 /* Build configuration list for PBXNativeTarget "Lib" */;
+			buildPhases = (
+				FE59F3D81E4EDE9400843828 /* Sources */,
+				FE59F3D91E4EDE9400843828 /* Frameworks */,
+				FE59F3DA1E4EDE9400843828 /* Headers */,
+				FE59F3DB1E4EDE9400843828 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lib;
+			productName = Lib;
+			productReference = FE59F3DD1E4EDE9400843828 /* Lib.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FE59F3E41E4EDE9500843828 /* LibTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE59F3F71E4EDE9500843828 /* Build configuration list for PBXNativeTarget "LibTests" */;
+			buildPhases = (
+				FE59F3E11E4EDE9500843828 /* Sources */,
+				FE59F3E21E4EDE9500843828 /* Frameworks */,
+				FE59F3E31E4EDE9500843828 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE59F3E81E4EDE9500843828 /* PBXTargetDependency */,
+				FE59F3EA1E4EDE9500843828 /* PBXTargetDependency */,
+			);
+			name = LibTests;
+			productName = LibTests;
+			productReference = FE59F3E51E4EDE9500843828 /* LibTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FE59F3FE1E4EDEE100843828 /* PinboardLetter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE59F40A1E4EDEE100843828 /* Build configuration list for PBXNativeTarget "PinboardLetter" */;
+			buildPhases = (
+				FE59F3FB1E4EDEE100843828 /* Sources */,
+				FE59F3FC1E4EDEE100843828 /* Frameworks */,
+				FE59F3FD1E4EDEE100843828 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PinboardLetter;
+			productName = PinboardLetter;
+			productReference = FE59F3FF1E4EDEE100843828 /* PinboardLetter.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		FE59F4111E4EDEF500843828 /* PinboardStar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE59F41D1E4EDEF500843828 /* Build configuration list for PBXNativeTarget "PinboardStar" */;
+			buildPhases = (
+				FE59F40E1E4EDEF500843828 /* Sources */,
+				FE59F40F1E4EDEF500843828 /* Frameworks */,
+				FE59F4101E4EDEF500843828 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PinboardStar;
+			productName = PinboardStar;
+			productReference = FE59F4121E4EDEF500843828 /* PinboardStar.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -208,6 +620,39 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = FE432D621E4ED1C300E3F45E;
 					};
+					FE59F3B91E4EDE2800843828 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3RPN8GKB6G;
+						ProvisioningStyle = Automatic;
+					};
+					FE59F3C11E4EDE2800843828 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3RPN8GKB6G;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FE432D621E4ED1C300E3F45E;
+					};
+					FE59F3DC1E4EDE9400843828 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3RPN8GKB6G;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+					FE59F3E41E4EDE9500843828 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3RPN8GKB6G;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FE432D621E4ED1C300E3F45E;
+					};
+					FE59F3FE1E4EDEE100843828 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3RPN8GKB6G;
+						ProvisioningStyle = Automatic;
+					};
+					FE59F4111E4EDEF500843828 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3RPN8GKB6G;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = FE432D5E1E4ED1C300E3F45E /* Build configuration list for PBXProject "monokit" */;
@@ -226,6 +671,12 @@
 				FE432D621E4ED1C300E3F45E /* monokit */,
 				FE432D761E4ED1C300E3F45E /* monokitTests */,
 				FE432D811E4ED1C300E3F45E /* monokitUITests */,
+				FE59F3B91E4EDE2800843828 /* Pinboard */,
+				FE59F3C11E4EDE2800843828 /* PinboardTests */,
+				FE59F3DC1E4EDE9400843828 /* Lib */,
+				FE59F3E41E4EDE9500843828 /* LibTests */,
+				FE59F3FE1E4EDEE100843828 /* PinboardLetter */,
+				FE59F4111E4EDEF500843828 /* PinboardStar */,
 			);
 		};
 /* End PBXProject section */
@@ -255,7 +706,72 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FE59F3B81E4EDE2800843828 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE59F3C01E4EDE2800843828 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE59F3DB1E4EDE9400843828 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE59F3E31E4EDE9500843828 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE59F3FD1E4EDEE100843828 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE59F4051E4EDEE100843828 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE59F4101E4EDEF500843828 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE59F4181E4EDEF500843828 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FE59F4291E4EDF4000843828 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/APIKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Himotoki.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"${CONFIGURATION}\" = \"Release\" ]; then\n/usr/local/bin/carthage copy-frameworks\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FE432D5F1E4ED1C300E3F45E /* Sources */ = {
@@ -283,6 +799,53 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FE59F3B51E4EDE2800843828 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE59F3BE1E4EDE2800843828 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE59F3CA1E4EDE2800843828 /* PinboardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE59F3D81E4EDE9400843828 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE59F42C1E4EE09200843828 /* Logger.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE59F3E11E4EDE9500843828 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE59F42F1E4EEB4D00843828 /* LoggerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE59F3FB1E4EDEE100843828 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE59F4021E4EDEE100843828 /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE59F40E1E4EDEF500843828 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE59F4151E4EDEF500843828 /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -295,6 +858,46 @@
 			isa = PBXTargetDependency;
 			target = FE432D621E4ED1C300E3F45E /* monokit */;
 			targetProxy = FE432D831E4ED1C300E3F45E /* PBXContainerItemProxy */;
+		};
+		FE59F3C51E4EDE2800843828 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE59F3B91E4EDE2800843828 /* Pinboard */;
+			targetProxy = FE59F3C41E4EDE2800843828 /* PBXContainerItemProxy */;
+		};
+		FE59F3C71E4EDE2800843828 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE432D621E4ED1C300E3F45E /* monokit */;
+			targetProxy = FE59F3C61E4EDE2800843828 /* PBXContainerItemProxy */;
+		};
+		FE59F3CE1E4EDE2800843828 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE59F3B91E4EDE2800843828 /* Pinboard */;
+			targetProxy = FE59F3CD1E4EDE2800843828 /* PBXContainerItemProxy */;
+		};
+		FE59F3E81E4EDE9500843828 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE59F3DC1E4EDE9400843828 /* Lib */;
+			targetProxy = FE59F3E71E4EDE9500843828 /* PBXContainerItemProxy */;
+		};
+		FE59F3EA1E4EDE9500843828 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE432D621E4ED1C300E3F45E /* monokit */;
+			targetProxy = FE59F3E91E4EDE9500843828 /* PBXContainerItemProxy */;
+		};
+		FE59F3F11E4EDE9500843828 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE59F3DC1E4EDE9400843828 /* Lib */;
+			targetProxy = FE59F3F01E4EDE9500843828 /* PBXContainerItemProxy */;
+		};
+		FE59F4081E4EDEE100843828 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE59F3FE1E4EDEE100843828 /* PinboardLetter */;
+			targetProxy = FE59F4071E4EDEE100843828 /* PBXContainerItemProxy */;
+		};
+		FE59F41B1E4EDEF500843828 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE59F4111E4EDEF500843828 /* PinboardStar */;
+			targetProxy = FE59F41A1E4EDEF500843828 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -313,6 +916,22 @@
 				FE432D701E4ED1C300E3F45E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FE59F4031E4EDEE100843828 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE59F4041E4EDEE100843828 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		FE59F4161E4EDEF500843828 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE59F4171E4EDEF500843828 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -358,7 +977,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -402,7 +1020,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -414,8 +1031,13 @@
 		FE432D8C1E4ED1C300E3F45E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3RPN8GKB6G;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = monokit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mono0926.monokit;
@@ -427,8 +1049,13 @@
 		FE432D8D1E4ED1C300E3F45E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3RPN8GKB6G;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = monokit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mono0926.monokit;
@@ -495,6 +1122,205 @@
 			};
 			name = Release;
 		};
+		FE59F3D21E4EDE2800843828 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3RPN8GKB6G;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Pinboard/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mono0926.Pinboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FE59F3D31E4EDE2800843828 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3RPN8GKB6G;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Pinboard/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mono0926.Pinboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FE59F3D61E4EDE2800843828 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 3RPN8GKB6G;
+				INFOPLIST_FILE = PinboardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mono0926.PinboardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/monokit.app/monokit";
+			};
+			name = Debug;
+		};
+		FE59F3D71E4EDE2800843828 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 3RPN8GKB6G;
+				INFOPLIST_FILE = PinboardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mono0926.PinboardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/monokit.app/monokit";
+			};
+			name = Release;
+		};
+		FE59F3F51E4EDE9500843828 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3RPN8GKB6G;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Lib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mono0926.Lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FE59F3F61E4EDE9500843828 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3RPN8GKB6G;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Lib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mono0926.Lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FE59F3F81E4EDE9500843828 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 3RPN8GKB6G;
+				INFOPLIST_FILE = LibTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mono0926.LibTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/monokit.app/monokit";
+			};
+			name = Debug;
+		};
+		FE59F3F91E4EDE9500843828 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 3RPN8GKB6G;
+				INFOPLIST_FILE = LibTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mono0926.LibTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/monokit.app/monokit";
+			};
+			name = Release;
+		};
+		FE59F40B1E4EDEE100843828 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 3RPN8GKB6G;
+				INFOPLIST_FILE = PinboardLetter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mono0926.monokit.PinboardLetter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FE59F40C1E4EDEE100843828 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 3RPN8GKB6G;
+				INFOPLIST_FILE = PinboardLetter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mono0926.monokit.PinboardLetter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		FE59F41E1E4EDEF500843828 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 3RPN8GKB6G;
+				INFOPLIST_FILE = PinboardStar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mono0926.monokit.PinboardStar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FE59F41F1E4EDEF500843828 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 3RPN8GKB6G;
+				INFOPLIST_FILE = PinboardStar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mono0926.monokit.PinboardStar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -533,6 +1359,54 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		FE59F3D11E4EDE2800843828 /* Build configuration list for PBXNativeTarget "Pinboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE59F3D21E4EDE2800843828 /* Debug */,
+				FE59F3D31E4EDE2800843828 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FE59F3D51E4EDE2800843828 /* Build configuration list for PBXNativeTarget "PinboardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE59F3D61E4EDE2800843828 /* Debug */,
+				FE59F3D71E4EDE2800843828 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FE59F3F41E4EDE9500843828 /* Build configuration list for PBXNativeTarget "Lib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE59F3F51E4EDE9500843828 /* Debug */,
+				FE59F3F61E4EDE9500843828 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FE59F3F71E4EDE9500843828 /* Build configuration list for PBXNativeTarget "LibTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE59F3F81E4EDE9500843828 /* Debug */,
+				FE59F3F91E4EDE9500843828 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FE59F40A1E4EDEE100843828 /* Build configuration list for PBXNativeTarget "PinboardLetter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE59F40B1E4EDEE100843828 /* Debug */,
+				FE59F40C1E4EDEE100843828 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FE59F41D1E4EDEF500843828 /* Build configuration list for PBXNativeTarget "PinboardStar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE59F41E1E4EDEF500843828 /* Debug */,
+				FE59F41F1E4EDEF500843828 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
