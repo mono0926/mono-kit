@@ -57,7 +57,7 @@ public struct Logger {
         let staticSelf = type(of: self)
         let log = staticSelf.log
         guard log.isEnabled(type: logType) else { return }
-        let output = staticSelf.buildOutput(message, logType: logType, functionName: functionName, fileName: fileName, lineNumber: lineNumber)
+        guard let output = staticSelf.buildOutput(message, logType: logType, functionName: functionName, fileName: fileName, lineNumber: lineNumber) else { return }
         os_log("%@", log: log, type: logType, output)
     }
 
@@ -65,8 +65,9 @@ public struct Logger {
                              logType: OSLogType,
                              functionName: StaticString,
                              fileName: StaticString,
-                             lineNumber: Int) -> String {
-        return "[\(logType)] [\(threadName)] [\((String(describing: fileName) as NSString).lastPathComponent):\(lineNumber)] \(functionName) > \(message() ?? "")"
+                             lineNumber: Int) -> String? {
+        guard let message = message() else { return nil }
+        return "[\(logType)] [\(threadName)] [\((String(describing: fileName) as NSString).lastPathComponent):\(lineNumber)] \(functionName) > \(message)"
     }
 
     private static var threadName: String {
