@@ -16,7 +16,7 @@ struct PostRequests {
     private init() {}
 
     struct Add: AuthenticatedRequest {
-        private let url: String
+        private let url: URL
         private let description: String
         private let tags: [String]
 
@@ -30,7 +30,7 @@ struct PostRequests {
 
         var queryParameters: [String : Any]? {
             return apiParameters.merged([
-                "url": url,
+                "url": url.absoluteString,
                 "description": description,
                 "tags": tags.joined(separator: ",")
                 ])
@@ -40,7 +40,7 @@ struct PostRequests {
             return ["Content-Type": "application/xml"]
         }
 
-        init(url: String, description: String, tags: [String]) {
+        init(url: URL, description: String, tags: [String]) {
             self.url = url
             self.description = description
             self.tags = tags

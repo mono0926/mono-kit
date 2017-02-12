@@ -8,6 +8,7 @@
 
 import Foundation
 import SVProgressHUD
+import APIKit
 
 public struct Progress {
     private init() {}
@@ -21,10 +22,28 @@ public struct Progress {
         SVProgressHUD.showSuccess(withStatus: status)
     }
     public static func error(status: String) {
+        logger.error(status)
         SVProgressHUD.showError(withStatus: status)
     }
     public static func error(_ error: Error) {
-        SVProgressHUD.showError(withStatus: error.localizedDescription)
+        self.error(status: error.localizedDescription)
+    }
+    public static func handle(error: Error) {
+        logger.error(error)
+        if let error = error as? SessionTaskError {
+            switch error {
+            case .responseError(let error):
+                self.error(error)
+                return
+            case .connectionError(let error):
+                self.error(error)
+                return
+            case .requestError(let error):
+                self.error(error)
+                return
+            }
+        }
+        Lib.Progress.error(error)
     }
 }
 

@@ -34,7 +34,7 @@ class PinboardViewController: UIViewController {
             .subscribe { event in
                 switch event {
                 case .error(let error):
-                    handle(error: error)
+                    Lib.Progress.error(error)
                 case .completed:
                     break
                 case .next(let token):
@@ -47,11 +47,11 @@ class PinboardViewController: UIViewController {
     }
 
     @IBAction func postDidTap(_ sender: UIButton) {
-        PinboardService.shared.post(url: urlTextField.text!, tag: "test")
+        PinboardService.shared.post(url: URL(string: urlTextField.text!)!, tag: "test")
             .subscribe { event in
                 switch event {
                 case .error(let error):
-                    handle(error: error)
+                    Lib.Progress.error(error)
                 case .completed:
                     break
                 case .next(let code):
