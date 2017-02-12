@@ -11,6 +11,7 @@ import UIKit
 import Pinboard
 import RxSwift
 import Lib
+import SwiftyStringExtension
 
 class PinboardViewController: UIViewController {
     private let disposeBag = DisposeBag()
@@ -23,7 +24,7 @@ class PinboardViewController: UIViewController {
         super.viewDidLoad()
         title = NSLocalizedString("pinboard.title", comment: "")
         userTextField.text = PinboardService.shared.user
-        apiTokenLabel.text = PinboardService.shared.apiToken
+        self.updateApiTokenLabel(token: PinboardService.shared.apiToken)
     }
 
     @IBAction func authenticateDidTap(_ sender: UIButton) {
@@ -38,7 +39,7 @@ class PinboardViewController: UIViewController {
                     break
                 case .next(let token):
                     logger.debug("token: \(token)")
-                    self.apiTokenLabel.text = token
+                    self.updateApiTokenLabel(token: token)
                     Lib.Progress.success()
                 }
         }
@@ -60,5 +61,12 @@ class PinboardViewController: UIViewController {
                 }
             }
             .addDisposableTo(disposeBag)
+    }
+
+    private func updateApiTokenLabel(token: String?) {
+        guard let token = token else {
+            return
+        }
+        apiTokenLabel.text = token.replacingLast(token.count - 3, with: "*")
     }
 }

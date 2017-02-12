@@ -85,6 +85,8 @@
 		FE59F4801E4F4D1500843828 /* Progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE59F47F1E4F4D1500843828 /* Progress.swift */; };
 		FE59F4811E4F4D2400843828 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F47C1E4F4D0300843828 /* SVProgressHUD.framework */; };
 		FE59F4841E4F53B900843828 /* Pinboard.extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE59F4831E4F53B900843828 /* Pinboard.extension.swift */; };
+		FE59F4861E4FEA5C00843828 /* SwiftyStringExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F4851E4FEA5C00843828 /* SwiftyStringExtension.framework */; };
+		FE59F4871E4FEA5C00843828 /* SwiftyStringExtension.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F4851E4FEA5C00843828 /* SwiftyStringExtension.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -176,6 +178,7 @@
 				FE59F4281E4EDF1E00843828 /* Result.framework in Embed Frameworks */,
 				FE59F4261E4EDF1E00843828 /* Himotoki.framework in Embed Frameworks */,
 				FE59F46D1E4F452C00843828 /* KeychainAccess.framework in Embed Frameworks */,
+				FE59F4871E4FEA5C00843828 /* SwiftyStringExtension.framework in Embed Frameworks */,
 				FE59F4521E4F028200843828 /* SWXMLHash.framework in Embed Frameworks */,
 				FE59F3D01E4EDE2800843828 /* Pinboard.framework in Embed Frameworks */,
 			);
@@ -259,6 +262,7 @@
 		FE59F47C1E4F4D0300843828 /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = "<group>"; };
 		FE59F47F1E4F4D1500843828 /* Progress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Progress.swift; sourceTree = "<group>"; };
 		FE59F4831E4F53B900843828 /* Pinboard.extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pinboard.extension.swift; sourceTree = "<group>"; };
+		FE59F4851E4FEA5C00843828 /* SwiftyStringExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyStringExtension.framework; path = Carthage/Build/iOS/SwiftyStringExtension.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -275,6 +279,7 @@
 				FE59F4271E4EDF1E00843828 /* Result.framework in Frameworks */,
 				FE59F4251E4EDF1E00843828 /* Himotoki.framework in Frameworks */,
 				FE59F46C1E4F452C00843828 /* KeychainAccess.framework in Frameworks */,
+				FE59F4861E4FEA5C00843828 /* SwiftyStringExtension.framework in Frameworks */,
 				FE59F4511E4F028200843828 /* SWXMLHash.framework in Frameworks */,
 				FE59F3CF1E4EDE2800843828 /* Pinboard.framework in Frameworks */,
 			);
@@ -362,6 +367,7 @@
 		FE432D5A1E4ED1C300E3F45E = {
 			isa = PBXGroup;
 			children = (
+				FE59F4851E4FEA5C00843828 /* SwiftyStringExtension.framework */,
 				FE59F47C1E4F4D0300843828 /* SVProgressHUD.framework */,
 				FE59F46E1E4F456500843828 /* SwiftyUserDefaults.framework */,
 				FE59F46B1E4F452C00843828 /* KeychainAccess.framework */,
@@ -971,6 +977,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/KeychainAccess.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyUserDefaults.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SVProgressHUD.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyStringExtension.framework",
 			);
 			name = Carthage;
 			outputPaths = (
