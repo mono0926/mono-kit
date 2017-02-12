@@ -25,14 +25,16 @@ class ShareViewController: UIViewController {
     private func process() {
         let type = String(describing: kUTTypeURL)
         guard let item = (extensionContext?.inputItems.flatMap { $0 as? NSExtensionItem })?.first,
-        let provider = (item.attachments?.flatMap { $0 as? NSItemProvider })?.first,
-        provider.hasItemConformingToTypeIdentifier(type) else {
-            return
+            let provider = (item.attachments?.flatMap { $0 as? NSItemProvider }.filter{ $0.hasItemConformingToTypeIdentifier(type) })?.first
+             else {
+                self.close()
+                return
         }
         provider.loadItem(forTypeIdentifier: type, options: nil) { result, error in
             logger.error(error)
             guard let url = result as? URL else {
                 logger.error("result(\(result) is not URL")
+                self.close()
                 return
             }
             self.postToPinboard(url: url)
@@ -46,7 +48,7 @@ class ShareViewController: UIViewController {
                 switch event {
                 case .error(let error):
                     let status = Lib.Progress.error(error)
-                    self.statusLabel.text = status
+                    self.show(status: status)
                     DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
                         self.close()
                     }
@@ -64,21 +66,7 @@ class ShareViewController: UIViewController {
         extensionContext?.completeRequest(returningItems: nil, completionHandler: nil)
     }
 
-//    override func isContentValid() -> Bool {
-//        // Do validation of contentText and/or NSExtensionContext attachments here
-//        return true
-//    }
-//
-//    override func didSelectPost() {
-//        // This is called after the user selects Post. Do the upload of contentText and/or NSExtensionContext attachments.
-//    
-//        // Inform the host that we're done, so it un-blocks its UI. Note: Alternatively you could call super's -didSelectPost, which will similarly complete the extension context.
-//        self.extensionContext!.completeRequest(returningItems: [], completionHandler: nil)
-//    }
-//
-//    override func configurationItems() -> [Any]! {
-//        // To add configuration options via table cells at the bottom of the sheet, return an array of SLComposeSheetConfigurationItem here.
-//        return []
-//    }
-
+    private func show(status: String) {
+        statusLabel.text = status
+    }
 }
