@@ -25,7 +25,7 @@ struct PostRequests {
         var path: String { return "posts/add" }
 
         func response(from object: Any, urlResponse: HTTPURLResponse) throws -> PostAddedResponse {
-            return PostAddedResponse(xml: object as! XMLIndexer)
+            return try PostAddedResponse(xml: object as! XMLIndexer)
         }
 
         var queryParameters: [String : Any]? {
@@ -50,7 +50,7 @@ struct PostRequests {
 
 struct PostAddedResponse {
     let code: String
-    init(xml: XMLIndexer) {
-        code = try! xml["result"].value(ofAttribute: "code")
+    init(xml: XMLIndexer) throws {
+        code = try xml["result"].value(ofAttribute: "code")
     }
 }

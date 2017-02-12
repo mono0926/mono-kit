@@ -12,8 +12,6 @@
 		FE432D6C1E4ED1C300E3F45E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE432D6A1E4ED1C300E3F45E /* Main.storyboard */; };
 		FE432D6E1E4ED1C300E3F45E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE432D6D1E4ED1C300E3F45E /* Assets.xcassets */; };
 		FE432D711E4ED1C300E3F45E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE432D6F1E4ED1C300E3F45E /* LaunchScreen.storyboard */; };
-		FE432D7C1E4ED1C300E3F45E /* monokitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE432D7B1E4ED1C300E3F45E /* monokitTests.swift */; };
-		FE432D871E4ED1C300E3F45E /* monokitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE432D861E4ED1C300E3F45E /* monokitUITests.swift */; };
 		FE59F3C31E4EDE2800843828 /* Pinboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F3BA1E4EDE2800843828 /* Pinboard.framework */; };
 		FE59F3CC1E4EDE2800843828 /* Pinboard.h in Headers */ = {isa = PBXBuildFile; fileRef = FE59F3BC1E4EDE2800843828 /* Pinboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FE59F3CF1E4EDE2800843828 /* Pinboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F3BA1E4EDE2800843828 /* Pinboard.framework */; };
@@ -93,20 +91,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		FE432D781E4ED1C300E3F45E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FE432D5B1E4ED1C300E3F45E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FE432D621E4ED1C300E3F45E;
-			remoteInfo = monokit;
-		};
-		FE432D831E4ED1C300E3F45E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FE432D5B1E4ED1C300E3F45E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FE432D621E4ED1C300E3F45E;
-			remoteInfo = monokit;
-		};
 		FE59F3C41E4EDE2800843828 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FE432D5B1E4ED1C300E3F45E /* Project object */;
@@ -202,12 +186,6 @@
 		FE432D6D1E4ED1C300E3F45E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE432D701E4ED1C300E3F45E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE432D721E4ED1C300E3F45E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FE432D771E4ED1C300E3F45E /* monokitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = monokitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE432D7B1E4ED1C300E3F45E /* monokitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = monokitTests.swift; sourceTree = "<group>"; };
-		FE432D7D1E4ED1C300E3F45E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FE432D821E4ED1C300E3F45E /* monokitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = monokitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE432D861E4ED1C300E3F45E /* monokitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = monokitUITests.swift; sourceTree = "<group>"; };
-		FE432D881E4ED1C300E3F45E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE59F3BA1E4EDE2800843828 /* Pinboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pinboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE59F3BC1E4EDE2800843828 /* Pinboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pinboard.h; sourceTree = "<group>"; };
 		FE59F3BD1E4EDE2800843828 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -257,6 +235,8 @@
 		FE59F4A61E4FF91600843828 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		FE59F4A91E4FF91600843828 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		FE59F4AB1E4FF91700843828 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE59F4B51E50049400843828 /* monokit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = monokit.entitlements; sourceTree = "<group>"; };
+		FE59F4B61E50052B00843828 /* PinboardLetter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PinboardLetter.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -276,20 +256,6 @@
 				FE59F4861E4FEA5C00843828 /* SwiftyStringExtension.framework in Frameworks */,
 				FE59F4511E4F028200843828 /* SWXMLHash.framework in Frameworks */,
 				FE59F3CF1E4EDE2800843828 /* Pinboard.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FE432D741E4ED1C300E3F45E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FE432D7F1E4ED1C300E3F45E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,8 +334,6 @@
 				FE59F4211E4EDF1E00843828 /* Himotoki.framework */,
 				FE59F4221E4EDF1E00843828 /* Result.framework */,
 				FE432D651E4ED1C300E3F45E /* monokit */,
-				FE432D7A1E4ED1C300E3F45E /* monokitTests */,
-				FE432D851E4ED1C300E3F45E /* monokitUITests */,
 				FE59F3BB1E4EDE2800843828 /* Pinboard */,
 				FE59F3C81E4EDE2800843828 /* PinboardTests */,
 				FE59F3DE1E4EDE9500843828 /* Lib */,
@@ -384,8 +348,6 @@
 			isa = PBXGroup;
 			children = (
 				FE432D631E4ED1C300E3F45E /* monokit.app */,
-				FE432D771E4ED1C300E3F45E /* monokitTests.xctest */,
-				FE432D821E4ED1C300E3F45E /* monokitUITests.xctest */,
 				FE59F3BA1E4EDE2800843828 /* Pinboard.framework */,
 				FE59F3C21E4EDE2800843828 /* PinboardTests.xctest */,
 				FE59F3DD1E4EDE9400843828 /* Lib.framework */,
@@ -398,6 +360,7 @@
 		FE432D651E4ED1C300E3F45E /* monokit */ = {
 			isa = PBXGroup;
 			children = (
+				FE59F4B51E50049400843828 /* monokit.entitlements */,
 				FE59F4821E4F53AD00843828 /* Extension */,
 				FE59F4621E4F403900843828 /* View */,
 				FE432D661E4ED1C300E3F45E /* AppDelegate.swift */,
@@ -410,24 +373,6 @@
 				FE59F4881E4FEF2A00843828 /* Functions.swift */,
 			);
 			path = monokit;
-			sourceTree = "<group>";
-		};
-		FE432D7A1E4ED1C300E3F45E /* monokitTests */ = {
-			isa = PBXGroup;
-			children = (
-				FE432D7B1E4ED1C300E3F45E /* monokitTests.swift */,
-				FE432D7D1E4ED1C300E3F45E /* Info.plist */,
-			);
-			path = monokitTests;
-			sourceTree = "<group>";
-		};
-		FE432D851E4ED1C300E3F45E /* monokitUITests */ = {
-			isa = PBXGroup;
-			children = (
-				FE432D861E4ED1C300E3F45E /* monokitUITests.swift */,
-				FE432D881E4ED1C300E3F45E /* Info.plist */,
-			);
-			path = monokitUITests;
 			sourceTree = "<group>";
 		};
 		FE59F3BB1E4EDE2800843828 /* Pinboard */ = {
@@ -583,6 +528,7 @@
 		FE59F4A51E4FF91600843828 /* PinboardLetter */ = {
 			isa = PBXGroup;
 			children = (
+				FE59F4B61E50052B00843828 /* PinboardLetter.entitlements */,
 				FE59F4A61E4FF91600843828 /* ShareViewController.swift */,
 				FE59F4A81E4FF91600843828 /* MainInterface.storyboard */,
 				FE59F4AB1E4FF91700843828 /* Info.plist */,
@@ -634,42 +580,6 @@
 			productName = monokit;
 			productReference = FE432D631E4ED1C300E3F45E /* monokit.app */;
 			productType = "com.apple.product-type.application";
-		};
-		FE432D761E4ED1C300E3F45E /* monokitTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FE432D8E1E4ED1C300E3F45E /* Build configuration list for PBXNativeTarget "monokitTests" */;
-			buildPhases = (
-				FE432D731E4ED1C300E3F45E /* Sources */,
-				FE432D741E4ED1C300E3F45E /* Frameworks */,
-				FE432D751E4ED1C300E3F45E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FE432D791E4ED1C300E3F45E /* PBXTargetDependency */,
-			);
-			name = monokitTests;
-			productName = monokitTests;
-			productReference = FE432D771E4ED1C300E3F45E /* monokitTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		FE432D811E4ED1C300E3F45E /* monokitUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FE432D911E4ED1C300E3F45E /* Build configuration list for PBXNativeTarget "monokitUITests" */;
-			buildPhases = (
-				FE432D7E1E4ED1C300E3F45E /* Sources */,
-				FE432D7F1E4ED1C300E3F45E /* Frameworks */,
-				FE432D801E4ED1C300E3F45E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FE432D841E4ED1C300E3F45E /* PBXTargetDependency */,
-			);
-			name = monokitUITests;
-			productName = monokitUITests;
-			productReference = FE432D821E4ED1C300E3F45E /* monokitUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		FE59F3B91E4EDE2800843828 /* Pinboard */ = {
 			isa = PBXNativeTarget;
@@ -776,18 +686,14 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 3RPN8GKB6G;
 						ProvisioningStyle = Automatic;
-					};
-					FE432D761E4ED1C300E3F45E = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 3RPN8GKB6G;
-						ProvisioningStyle = Automatic;
-						TestTargetID = FE432D621E4ED1C300E3F45E;
-					};
-					FE432D811E4ED1C300E3F45E = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 3RPN8GKB6G;
-						ProvisioningStyle = Automatic;
-						TestTargetID = FE432D621E4ED1C300E3F45E;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					FE59F3B91E4EDE2800843828 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -817,6 +723,14 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 3RPN8GKB6G;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -834,8 +748,6 @@
 			projectRoot = "";
 			targets = (
 				FE432D621E4ED1C300E3F45E /* monokit */,
-				FE432D761E4ED1C300E3F45E /* monokitTests */,
-				FE432D811E4ED1C300E3F45E /* monokitUITests */,
 				FE59F3B91E4EDE2800843828 /* Pinboard */,
 				FE59F3C11E4EDE2800843828 /* PinboardTests */,
 				FE59F3DC1E4EDE9400843828 /* Lib */,
@@ -854,20 +766,6 @@
 				FE59F4671E4F40A800843828 /* Localizable.strings in Resources */,
 				FE432D6E1E4ED1C300E3F45E /* Assets.xcassets in Resources */,
 				FE432D6C1E4ED1C300E3F45E /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FE432D751E4ED1C300E3F45E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FE432D801E4ED1C300E3F45E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -950,22 +848,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FE432D731E4ED1C300E3F45E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FE432D7C1E4ED1C300E3F45E /* monokitTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FE432D7E1E4ED1C300E3F45E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FE432D871E4ED1C300E3F45E /* monokitUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		FE59F3B51E4EDE2800843828 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1024,16 +906,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		FE432D791E4ED1C300E3F45E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FE432D621E4ED1C300E3F45E /* monokit */;
-			targetProxy = FE432D781E4ED1C300E3F45E /* PBXContainerItemProxy */;
-		};
-		FE432D841E4ED1C300E3F45E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FE432D621E4ED1C300E3F45E /* monokit */;
-			targetProxy = FE432D831E4ED1C300E3F45E /* PBXContainerItemProxy */;
-		};
 		FE59F3C51E4EDE2800843828 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = FE59F3B91E4EDE2800843828 /* Pinboard */;
@@ -1195,6 +1067,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = monokit/monokit.entitlements;
 				DEVELOPMENT_TEAM = 3RPN8GKB6G;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1213,6 +1086,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = monokit/monokit.entitlements;
 				DEVELOPMENT_TEAM = 3RPN8GKB6G;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1223,64 +1097,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mono0926.monokit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		FE432D8F1E4ED1C300E3F45E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 3RPN8GKB6G;
-				INFOPLIST_FILE = monokitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mono0926.monokitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/monokit.app/monokit";
-			};
-			name = Debug;
-		};
-		FE432D901E4ED1C300E3F45E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 3RPN8GKB6G;
-				INFOPLIST_FILE = monokitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mono0926.monokitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/monokit.app/monokit";
-			};
-			name = Release;
-		};
-		FE432D921E4ED1C300E3F45E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = 3RPN8GKB6G;
-				INFOPLIST_FILE = monokitUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mono0926.monokitUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = monokit;
-			};
-			name = Debug;
-		};
-		FE432D931E4ED1C300E3F45E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = 3RPN8GKB6G;
-				INFOPLIST_FILE = monokitUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mono0926.monokitUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = monokit;
 			};
 			name = Release;
 		};
@@ -1469,6 +1285,7 @@
 		FE59F4B01E4FF91700843828 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PinboardLetter/PinboardLetter.entitlements;
 				DEVELOPMENT_TEAM = 3RPN8GKB6G;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1487,6 +1304,7 @@
 		FE59F4B11E4FF91700843828 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PinboardLetter/PinboardLetter.entitlements;
 				DEVELOPMENT_TEAM = 3RPN8GKB6G;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1523,24 +1341,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FE432D8E1E4ED1C300E3F45E /* Build configuration list for PBXNativeTarget "monokitTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FE432D8F1E4ED1C300E3F45E /* Debug */,
-				FE432D901E4ED1C300E3F45E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FE432D911E4ED1C300E3F45E /* Build configuration list for PBXNativeTarget "monokitUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FE432D921E4ED1C300E3F45E /* Debug */,
-				FE432D931E4ED1C300E3F45E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		FE59F3D11E4EDE2800843828 /* Build configuration list for PBXNativeTarget "Pinboard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1548,6 +1348,7 @@
 				FE59F3D31E4EDE2800843828 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FE59F3D51E4EDE2800843828 /* Build configuration list for PBXNativeTarget "PinboardTests" */ = {
 			isa = XCConfigurationList;
@@ -1556,6 +1357,7 @@
 				FE59F3D71E4EDE2800843828 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FE59F3F41E4EDE9500843828 /* Build configuration list for PBXNativeTarget "Lib" */ = {
 			isa = XCConfigurationList;
@@ -1564,6 +1366,7 @@
 				FE59F3F61E4EDE9500843828 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FE59F3F71E4EDE9500843828 /* Build configuration list for PBXNativeTarget "LibTests" */ = {
 			isa = XCConfigurationList;
@@ -1572,6 +1375,7 @@
 				FE59F3F91E4EDE9500843828 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FE59F4AF1E4FF91700843828 /* Build configuration list for PBXNativeTarget "PinboardLetter" */ = {
 			isa = XCConfigurationList;
@@ -1580,6 +1384,7 @@
 				FE59F4B11E4FF91700843828 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

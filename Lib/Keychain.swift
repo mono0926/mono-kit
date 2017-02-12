@@ -9,4 +9,5 @@
 import Foundation
 import KeychainAccess
 
+public let Defaults = UserDefaults(suiteName: "group.com.mono0926")!
 public let keychain = Keychain(service: "com.mono0926.monokit")

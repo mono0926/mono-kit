@@ -8,3 +8,4 @@
 "pinboard.title" = "Pinboard📌";
 "pinbaord.error_code_format" = "error occured(code: \(%@))";
 "pinbaord.invalid_response_format" = "error occured(invalid response: \(%@))";
+"pinbaord.url_empty" = "Input URL😡";

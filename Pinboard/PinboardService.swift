@@ -23,7 +23,7 @@ public class PinboardService {
     private init() {}
     public static let shared = PinboardService()
 
-    public var user: String? { return Defaults[.user] }
+    public var user: String? { return Lib.Defaults[.user] }
     public var apiToken: String? { return keychain[Keychain.apiTokenKey] }
     var authToken: String? {
         guard let user = user, let apiToken = apiToken else {
@@ -33,7 +33,7 @@ public class PinboardService {
     }
 
     public func authenticate(user: String, password: String) -> Observable<String> {
-        Defaults[.user] = user
+        Lib.Defaults[.user] = user
         return Session.shared.rx
             .response(UserRequests.ApiToken(user: user, password: password))
             .map { $0.result }

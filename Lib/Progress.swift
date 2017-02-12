@@ -25,25 +25,27 @@ public struct Progress {
         logger.error(status)
         SVProgressHUD.showError(withStatus: status)
     }
-    public static func error(_ error: Error) {
-        self.error(status: error.localizedDescription)
+    @discardableResult
+    public static func error(_ error: Error) -> String {
+        return self.handle(error: error)
     }
-    public static func handle(error: Error) {
+    private static func handle(error: Error) -> String {
         logger.error(error)
         if let error = error as? SessionTaskError {
             switch error {
             case .responseError(let error):
-                self.error(error)
-                return
+                self.error(status: error.localizedDescription)
+                return error.localizedDescription
             case .connectionError(let error):
-                self.error(error)
-                return
+                self.error(status: error.localizedDescription)
+                return error.localizedDescription
             case .requestError(let error):
-                self.error(error)
-                return
+                self.error(status: error.localizedDescription)
+                return error.localizedDescription
             }
         }
         Lib.Progress.error(error)
+        return error.localizedDescription
     }
 }
 

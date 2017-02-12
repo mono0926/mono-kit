@@ -47,7 +47,11 @@ class PinboardViewController: UIViewController {
     }
 
     @IBAction func postDidTap(_ sender: UIButton) {
-        PinboardService.shared.post(url: URL(string: urlTextField.text!)!, tag: "test")
+        guard let text = urlTextField.text, !text.isEmpty else {
+            Lib.Progress.error(status: NSLocalizedString("pinbaord.url_empty", comment: ""))
+            return
+        }
+        PinboardService.shared.post(url: URL(string: text)!, tag: "test")
             .subscribe { event in
                 switch event {
                 case .error(let error):

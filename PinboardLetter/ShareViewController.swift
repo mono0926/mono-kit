@@ -14,16 +14,12 @@ import RxSwift
 import MobileCoreServices
 
 class ShareViewController: UIViewController {
+    @IBOutlet private weak var statusLabel: UILabel!
     private let disposeBag = DisposeBag()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         process()
-    }
-
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-//        process()
     }
 
     private func process() {
@@ -49,15 +45,23 @@ class ShareViewController: UIViewController {
             .subscribe { event in
                 switch event {
                 case .error(let error):
-                    Lib.Progress.error(error)
+                    let status = Lib.Progress.error(error)
+                    self.statusLabel.text = status
+                    DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
+                        self.close()
+                    }
                 case .completed:
                     break
                 case .next(let code):
                     logger.debug("code: \(code)")
-                    Lib.Progress.success()
+                    self.close()
                 }
             }
             .addDisposableTo(disposeBag)
+    }
+
+    private func close() {
+        extensionContext?.completeRequest(returningItems: nil, completionHandler: nil)
     }
 
 //    override func isContentValid() -> Bool {
