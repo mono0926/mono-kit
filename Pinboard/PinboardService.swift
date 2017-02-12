@@ -13,7 +13,9 @@ import SwiftyUserDefaults
 import Lib
 
 public enum PinboardError: Error {
-    case post(code: String)
+    case
+    post(code: String),
+    invalid(response: Any)
 }
 
 public class PinboardService {

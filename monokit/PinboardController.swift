@@ -12,6 +12,7 @@ import Pinboard
 import RxSwift
 import Lib
 import SwiftyStringExtension
+import APIKit
 
 class PinboardViewController: UIViewController {
     private let disposeBag = DisposeBag()
@@ -33,8 +34,7 @@ class PinboardViewController: UIViewController {
             .subscribe { event in
                 switch event {
                 case .error(let error):
-                    logger.error(error)
-                    Lib.Progress.error(error)
+                    handle(error: error)
                 case .completed:
                     break
                 case .next(let token):
@@ -51,8 +51,7 @@ class PinboardViewController: UIViewController {
             .subscribe { event in
                 switch event {
                 case .error(let error):
-                    logger.error(error)
-                    Lib.Progress.error(error)
+                    handle(error: error)
                 case .completed:
                     break
                 case .next(let code):

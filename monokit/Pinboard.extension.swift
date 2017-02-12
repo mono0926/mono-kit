@@ -14,6 +14,8 @@ extension PinboardError: LocalizedError {
         switch self {
         case .post(let code):
             return String(format: NSLocalizedString("pinbaord.error_code_format", comment: ""), code)
+        case .invalid(let response):
+            return String(format: NSLocalizedString("pinbaord.invalid_response_format", comment: ""), String(describing: response))
         }
     }
 }

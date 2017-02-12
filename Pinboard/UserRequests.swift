@@ -30,7 +30,7 @@ struct UserRequests {
         }
 
         func response(from object: Any, urlResponse: HTTPURLResponse) throws -> ApiTokenResponse {
-            return ApiTokenResponse(xml: object as! XMLIndexer)
+            return try ApiTokenResponse(xml: object as! XMLIndexer)
         }
 
         init(user: String, password: String) {
@@ -42,8 +42,12 @@ struct UserRequests {
 
 struct ApiTokenResponse {
     let result: String
-    init(xml: XMLIndexer) {
-        result = xml["result"].element!.text!
+    init(xml: XMLIndexer) throws {
+        guard let value = xml["result"].element?.text else {
+            logger.fault(xml)
+            throw PinboardError.invalid(response: xml)
+        }
+        result = value
     }
 }
 

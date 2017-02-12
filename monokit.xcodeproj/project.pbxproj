@@ -87,6 +87,7 @@
 		FE59F4841E4F53B900843828 /* Pinboard.extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE59F4831E4F53B900843828 /* Pinboard.extension.swift */; };
 		FE59F4861E4FEA5C00843828 /* SwiftyStringExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F4851E4FEA5C00843828 /* SwiftyStringExtension.framework */; };
 		FE59F4871E4FEA5C00843828 /* SwiftyStringExtension.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F4851E4FEA5C00843828 /* SwiftyStringExtension.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FE59F4891E4FEF2A00843828 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE59F4881E4FEF2A00843828 /* Functions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -263,6 +264,7 @@
 		FE59F47F1E4F4D1500843828 /* Progress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Progress.swift; sourceTree = "<group>"; };
 		FE59F4831E4F53B900843828 /* Pinboard.extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pinboard.extension.swift; sourceTree = "<group>"; };
 		FE59F4851E4FEA5C00843828 /* SwiftyStringExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyStringExtension.framework; path = Carthage/Build/iOS/SwiftyStringExtension.framework; sourceTree = "<group>"; };
+		FE59F4881E4FEF2A00843828 /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -419,6 +421,7 @@
 				FE432D6F1E4ED1C300E3F45E /* LaunchScreen.storyboard */,
 				FE432D721E4ED1C300E3F45E /* Info.plist */,
 				FE59F4661E4F40A800843828 /* Localizable.strings */,
+				FE59F4881E4FEF2A00843828 /* Functions.swift */,
 			);
 			path = monokit;
 			sourceTree = "<group>";
@@ -996,6 +999,7 @@
 				FE432D691E4ED1C300E3F45E /* ViewController.swift in Sources */,
 				FE59F4841E4F53B900843828 /* Pinboard.extension.swift in Sources */,
 				FE432D671E4ED1C300E3F45E /* AppDelegate.swift in Sources */,
+				FE59F4891E4FEF2A00843828 /* Functions.swift in Sources */,
 				FE59F4651E4F405A00843828 /* PinboardController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
