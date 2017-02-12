@@ -88,6 +88,7 @@
 		FE59F4B21E4FF9A000843828 /* Lib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F3DD1E4EDE9400843828 /* Lib.framework */; };
 		FE59F4B31E4FF9A200843828 /* Pinboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F3BA1E4EDE2800843828 /* Pinboard.framework */; };
 		FE59F4B41E4FFD5700843828 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F4201E4EDF1E00843828 /* APIKit.framework */; };
+		FE6EDDB11E50266500DFAE57 /* UIViewController.pinboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6EDDB01E50266500DFAE57 /* UIViewController.pinboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -237,6 +238,7 @@
 		FE59F4AB1E4FF91700843828 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE59F4B51E50049400843828 /* monokit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = monokit.entitlements; sourceTree = "<group>"; };
 		FE59F4B61E50052B00843828 /* PinboardLetter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PinboardLetter.entitlements; sourceTree = "<group>"; };
+		FE6EDDB01E50266500DFAE57 /* UIViewController.pinboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.pinboard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -411,6 +413,7 @@
 				FE59F4761E4F46D800843828 /* Keychain.swift */,
 				FE59F47F1E4F4D1500843828 /* Progress.swift */,
 				FE59F48A1E4FF13E00843828 /* URL.extension.swift */,
+				FE6EDDB01E50266500DFAE57 /* UIViewController.pinboard.swift */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -883,6 +886,7 @@
 				FE59F4391E4EF2BE00843828 /* RxSwift.extension.swift in Sources */,
 				FE59F42C1E4EE09200843828 /* Logger.swift in Sources */,
 				FE59F4771E4F46D800843828 /* Keychain.swift in Sources */,
+				FE6EDDB11E50266500DFAE57 /* UIViewController.pinboard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

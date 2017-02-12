@@ -51,7 +51,7 @@ class PinboardViewController: UIViewController {
             Lib.Progress.error(status: NSLocalizedString("pinbaord.url_empty", comment: ""))
             return
         }
-        PinboardService.shared.post(url: URL(string: text)!, tags: ["test"])
+        PinboardService.shared.post(url: URL(string: text)!, tags: [PinboardTag.star🌟.rawValue])
             .subscribe { event in
                 switch event {
                 case .error(let error):

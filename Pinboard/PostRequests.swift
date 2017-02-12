@@ -19,6 +19,7 @@ struct PostRequests {
         private let url: URL
         private let description: String
         private let tags: [String]
+        private let toread: Bool
 
         typealias Response = PostAddedResponse
         var method: HTTPMethod { return .post }
@@ -32,7 +33,8 @@ struct PostRequests {
             return apiParameters.merged([
                 "url": url.absoluteString,
                 "description": description,
-                "tags": tags.joined(separator: ",")
+                "tags": tags.joined(separator: ","),
+                "toread": toread ? "yes" : "no"
                 ])
         }
 
@@ -40,10 +42,11 @@ struct PostRequests {
             return ["Content-Type": "application/xml"]
         }
 
-        init(url: URL, description: String, tags: [String]) {
+        init(url: URL, description: String, tags: [String], toread: Bool = true) {
             self.url = url
             self.description = description
             self.tags = tags
+            self.toread = toread
         }
     }
 }

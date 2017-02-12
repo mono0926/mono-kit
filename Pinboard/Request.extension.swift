@@ -17,9 +17,9 @@ extension ApiRequest {
 }
 
 protocol AuthenticatedRequest: ApiRequest {
-    var apiParameters: [String: String] { get }
+    var apiParameters: [String: Any] { get }
 }
 
 extension AuthenticatedRequest {
-    var apiParameters: [String: String] { return ["auth_token": PinboardService.shared.authToken!] }
+    var apiParameters: [String: Any] { return ["auth_token": PinboardService.shared.authToken!] }
 }

@@ -18,6 +18,13 @@ public enum PinboardError: Error {
     invalid(response: Any)
 }
 
+public enum PinboardTag: String {
+    case
+    🐶monoKit🐶,
+    letter🐦,
+    star🌟
+}
+
 public class PinboardService {
 
     private init() {}
@@ -45,7 +52,7 @@ public class PinboardService {
         return Session.shared.rx
             .response(PostRequests.Add(url: url,
                                        description: url.getHTMLTitle(),
-                                       tags: tags + ["🐶monoKit🐶"]))
+                                       tags: tags + [PinboardTag.🐶monoKit🐶.rawValue]))
             .flatMap { response -> Observable<String> in
                 let code = response.code
                 if code != "done" {
