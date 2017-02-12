@@ -41,11 +41,11 @@ public class PinboardService {
                 keychain[Keychain.apiTokenKey] = apiToken
             })
     }
-    public func post(url: URL, tag: String) -> Observable<String> {
+    public func post(url: URL, tags: [String]) -> Observable<String> {
         return Session.shared.rx
             .response(PostRequests.Add(url: url,
                                        description: url.getHTMLTitle(),
-                                       tags: [tag, "🐶monoKit🐶"]))
+                                       tags: tags + ["🐶monoKit🐶"]))
             .flatMap { response -> Observable<String> in
                 let code = response.code
                 if code != "done" {

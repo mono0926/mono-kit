@@ -43,7 +43,7 @@ class ShareViewController: UIViewController {
 
     private func postToPinboard(url: URL) {
         Lib.Progress.show()
-        PinboardService.shared.post(url: url, tag: "letter")
+        PinboardService.shared.post(url: url, tags: ["letter🐦"])
             .subscribe { event in
                 switch event {
                 case .error(let error):
