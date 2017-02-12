@@ -43,7 +43,9 @@ public class PinboardService {
     }
     public func post(url: String, tag: String) -> Observable<String> {
         return Session.shared.rx
-            .response(PostRequests.Add(url: url, description: "TODO", tags: [tag, "🐶monoKit🐶"]))
+            .response(PostRequests.Add(url: url,
+                                       description: URL(string: url)?.getHTMLTitle() ?? "invalid url",
+                                       tags: [tag, "🐶monoKit🐶"]))
             .flatMap { response -> Observable<String> in
                 let code = response.code
                 if code != "done" {

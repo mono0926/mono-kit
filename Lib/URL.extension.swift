@@ -9,17 +9,17 @@
 import Foundation
 
 extension URL {
-    func getHTMLTitle() -> String? {
+    public func getHTMLTitle() -> String {
         do {
             let source = try String(contentsOf: self)
             guard let start = source.range(of: "<title>"), let end = source.range(of: "</title>") else {
                 logger.error("no title tag, return host(\(host))")
-                return host
+                return host ?? absoluteString
             }
             return source[start.upperBound..<end.lowerBound]
         } catch let e {
             logger.fault(e)
-            return host
+            return host ?? absoluteString
         }
     }
 }
