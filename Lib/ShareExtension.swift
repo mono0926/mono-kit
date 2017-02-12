@@ -8,7 +8,6 @@
 
 import UIKit
 import Social
-import Pinboard
 import RxSwift
 import MobileCoreServices
 import RxSwift
@@ -20,37 +19,6 @@ public protocol ShareExtension {
     func getShareURL(_ callback: @escaping (URL) -> ())
     func show(status: String)
     func complete()
-}
-
-public protocol PinboardExtension: ShareExtension {
-    var tags: [PinboardTag] { get }
-    func shareToPinboard()
-}
-
-public extension PinboardExtension {
-    func shareToPinboard() {
-        getShareURL(postToPinboard)
-    }
-    private func postToPinboard(url: URL) {
-        Lib.Progress.show()
-        PinboardService.shared.post(url: url, tags: tags.map { $0.rawValue })
-            .subscribe { event in
-                switch event {
-                case .error(let error):
-                    let status = Lib.Progress.error(error)
-                    self.show(status: status)
-                    DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
-                        self.complete()
-                    }
-                case .completed:
-                    break
-                case .next(let code):
-                    logger.debug("code: \(code)")
-                    self.complete()
-                }
-            }
-            .addDisposableTo(disposeBag)
-    }
 }
 
 public extension ShareExtension where Self: UIViewController {

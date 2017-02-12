@@ -88,13 +88,14 @@
 		FE59F4B21E4FF9A000843828 /* Lib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F3DD1E4EDE9400843828 /* Lib.framework */; };
 		FE59F4B31E4FF9A200843828 /* Pinboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F3BA1E4EDE2800843828 /* Pinboard.framework */; };
 		FE59F4B41E4FFD5700843828 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F4201E4EDF1E00843828 /* APIKit.framework */; };
-		FE6EDDB11E50266500DFAE57 /* UIViewController.pinboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6EDDB01E50266500DFAE57 /* UIViewController.pinboard.swift */; };
+		FE6EDDB11E50266500DFAE57 /* ShareExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6EDDB01E50266500DFAE57 /* ShareExtension.swift */; };
 		FE6EDDB91E502BEB00DFAE57 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6EDDB81E502BEB00DFAE57 /* ShareViewController.swift */; };
 		FE6EDDBC1E502BEB00DFAE57 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE6EDDBA1E502BEB00DFAE57 /* MainInterface.storyboard */; };
 		FE6EDDC01E502BEB00DFAE57 /* PinboardStar.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FE6EDDB61E502BEB00DFAE57 /* PinboardStar.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		FE6EDDC41E502C1D00DFAE57 /* Lib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F3DD1E4EDE9400843828 /* Lib.framework */; };
 		FE6EDDC51E502C1D00DFAE57 /* Pinboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F3BA1E4EDE2800843828 /* Pinboard.framework */; };
 		FE6EDDC61E502C1F00DFAE57 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F4201E4EDF1E00843828 /* APIKit.framework */; };
+		FE6EDDC91E50316300DFAE57 /* ShareExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6EDDC81E50316300DFAE57 /* ShareExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -252,12 +253,13 @@
 		FE59F4AB1E4FF91700843828 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE59F4B51E50049400843828 /* monokit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = monokit.entitlements; sourceTree = "<group>"; };
 		FE59F4B61E50052B00843828 /* PinboardLetter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PinboardLetter.entitlements; sourceTree = "<group>"; };
-		FE6EDDB01E50266500DFAE57 /* UIViewController.pinboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.pinboard.swift; sourceTree = "<group>"; };
+		FE6EDDB01E50266500DFAE57 /* ShareExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareExtension.swift; sourceTree = "<group>"; };
 		FE6EDDB61E502BEB00DFAE57 /* PinboardStar.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PinboardStar.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE6EDDB81E502BEB00DFAE57 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		FE6EDDBB1E502BEB00DFAE57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		FE6EDDBD1E502BEB00DFAE57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE6EDDC71E502C2B00DFAE57 /* PinboardStar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PinboardStar.entitlements; sourceTree = "<group>"; };
+		FE6EDDC81E50316300DFAE57 /* ShareExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -418,6 +420,7 @@
 				FE59F3BD1E4EDE2800843828 /* Info.plist */,
 				FE59F4731E4F459000843828 /* UserDefaults.pinboard.swift */,
 				FE59F4781E4F483F00843828 /* Keychain.swift */,
+				FE6EDDC81E50316300DFAE57 /* ShareExtension.swift */,
 			);
 			path = Pinboard;
 			sourceTree = "<group>";
@@ -444,7 +447,7 @@
 				FE59F4761E4F46D800843828 /* Keychain.swift */,
 				FE59F47F1E4F4D1500843828 /* Progress.swift */,
 				FE59F48A1E4FF13E00843828 /* URL.extension.swift */,
-				FE6EDDB01E50266500DFAE57 /* UIViewController.pinboard.swift */,
+				FE6EDDB01E50266500DFAE57 /* ShareExtension.swift */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -944,6 +947,7 @@
 				FE59F44C1E4EFEFA00843828 /* XMLParser.swift in Sources */,
 				FE59F45D1E4F33D400843828 /* PostRequests.swift in Sources */,
 				FE59F4791E4F483F00843828 /* Keychain.swift in Sources */,
+				FE6EDDC91E50316300DFAE57 /* ShareExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -968,7 +972,7 @@
 				FE59F4391E4EF2BE00843828 /* RxSwift.extension.swift in Sources */,
 				FE59F42C1E4EE09200843828 /* Logger.swift in Sources */,
 				FE59F4771E4F46D800843828 /* Keychain.swift in Sources */,
-				FE6EDDB11E50266500DFAE57 /* UIViewController.pinboard.swift in Sources */,
+				FE6EDDB11E50266500DFAE57 /* ShareExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
