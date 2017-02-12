@@ -22,6 +22,9 @@ public protocol ShareExtension {
 }
 
 public extension ShareExtension where Self: UIViewController {
+
+    private typealias ItemProviderPair = (provider: NSItemProvider, type: String)
+
     func getShareURL(_ callback: @escaping (URL) -> ()) {
         guard let context = extensionContext else {
             logger.fault("context is nil")
@@ -57,8 +60,6 @@ public extension ShareExtension where Self: UIViewController {
         loadRecursively(providers: providers, callback: callback)
     }
 
-    typealias ItemProviderPair = (provider: NSItemProvider, type: String)
-
     private static func loadRecursively(providers: [ItemProviderPair], callback: @escaping (URL?) -> ()) {
         var providers = providers
         guard let p = providers.popLast() else {
@@ -79,28 +80,6 @@ public extension ShareExtension where Self: UIViewController {
             loadRecursively(providers: providers, callback: callback)
         }
     }
-
-//    private static func getUrl(context: NSExtensionContext, type: CFString, _ callback: @escaping (URL?) -> ()) {
-//        let typeS = String(describing: type)
-//        let provider = context.inputItems
-//            .flatMap { $0 as? NSExtensionItem }
-//            .flatMap { $0.attachments?.flatMap { $0 as? NSItemProvider }.filter{ print($0); return $0.hasItemConformingToTypeIdentifier(typeS) }.first }
-//            .first
-//        guard let p = provider else {
-//            callback(nil)
-//            return
-//        }
-//        p.load
-//        p.loadItem(forTypeIdentifier: typeS, options: nil) { result, error in
-//            logger.error(error)
-//            guard let url = result as? URL else {
-//                logger.error("result(\(result) is not URL")
-//                callback(nil)
-//                return
-//            }
-//            callback(url)
-//        }
-//    }
 
     func complete() {
         extensionContext!.completeRequest(returningItems: nil, completionHandler: nil)
