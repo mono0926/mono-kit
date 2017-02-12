@@ -10,6 +10,7 @@ import UIKit
 import Social
 import RxSwift
 import MobileCoreServices
+import SwiftyStringExtension
 
 public protocol ShareExtension {
     weak var statusLabel: UILabel! { get }
@@ -71,9 +72,15 @@ public extension ShareExtension where Self: UIViewController {
                 callback(url)
                 return
             }
-            if p.type == String(describing: kUTTypePlainText), let result = result as? String, let url = URL(string: result) {
-                callback(url)
-                return
+            if p.type == String(describing: kUTTypePlainText), let result = result as? String {
+                if let url = URL(string: result) {
+                    callback(url)
+                    return
+                }
+                if let start = result.range(of: "http")?.lowerBound, let urlCandidate = String(result.suffix(from: start))?.split(separator: " ").first, let url = URL(string: urlCandidate) {
+                    callback(url)
+                    return
+                }
             }
             logger.error("result(\(result) is not URL")
             loadRecursively(providers: providers, callback: callback)
