@@ -88,6 +88,8 @@
 		FE59F4861E4FEA5C00843828 /* SwiftyStringExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F4851E4FEA5C00843828 /* SwiftyStringExtension.framework */; };
 		FE59F4871E4FEA5C00843828 /* SwiftyStringExtension.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FE59F4851E4FEA5C00843828 /* SwiftyStringExtension.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FE59F4891E4FEF2A00843828 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE59F4881E4FEF2A00843828 /* Functions.swift */; };
+		FE59F48B1E4FF13E00843828 /* URL.extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE59F48A1E4FF13E00843828 /* URL.extension.swift */; };
+		FE59F48D1E4FF17200843828 /* URL.extension.tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE59F48C1E4FF17200843828 /* URL.extension.tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -265,6 +267,8 @@
 		FE59F4831E4F53B900843828 /* Pinboard.extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pinboard.extension.swift; sourceTree = "<group>"; };
 		FE59F4851E4FEA5C00843828 /* SwiftyStringExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyStringExtension.framework; path = Carthage/Build/iOS/SwiftyStringExtension.framework; sourceTree = "<group>"; };
 		FE59F4881E4FEF2A00843828 /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		FE59F48A1E4FF13E00843828 /* URL.extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URL.extension.swift; sourceTree = "<group>"; };
+		FE59F48C1E4FF17200843828 /* URL.extension.tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URL.extension.tests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -479,6 +483,7 @@
 				FE59F3E01E4EDE9500843828 /* Info.plist */,
 				FE59F4761E4F46D800843828 /* Keychain.swift */,
 				FE59F47F1E4F4D1500843828 /* Progress.swift */,
+				FE59F48A1E4FF13E00843828 /* URL.extension.swift */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -488,6 +493,7 @@
 			children = (
 				FE59F42D1E4EEB3600843828 /* log */,
 				FE59F3EE1E4EDE9500843828 /* Info.plist */,
+				FE59F48C1E4FF17200843828 /* URL.extension.tests.swift */,
 			);
 			path = LibTests;
 			sourceTree = "<group>";
@@ -1049,6 +1055,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE59F48B1E4FF13E00843828 /* URL.extension.swift in Sources */,
 				FE59F45F1E4F384400843828 /* Dictionary.extension.swift in Sources */,
 				FE59F4801E4F4D1500843828 /* Progress.swift in Sources */,
 				FE59F4391E4EF2BE00843828 /* RxSwift.extension.swift in Sources */,
@@ -1061,6 +1068,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE59F48D1E4FF17200843828 /* URL.extension.tests.swift in Sources */,
 				FE59F42F1E4EEB4D00843828 /* LoggerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
