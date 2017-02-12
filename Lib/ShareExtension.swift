@@ -10,7 +10,6 @@ import UIKit
 import Social
 import RxSwift
 import MobileCoreServices
-import RxSwift
 
 public protocol ShareExtension {
     weak var statusLabel: UILabel! { get }
