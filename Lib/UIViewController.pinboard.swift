@@ -23,7 +23,7 @@ public protocol ShareExtension {
 }
 
 public protocol PinboardExtension: ShareExtension {
-    var tags: [String] { get }
+    var tags: [PinboardTag] { get }
     func shareToPinboard()
 }
 
@@ -33,7 +33,7 @@ public extension PinboardExtension {
     }
     private func postToPinboard(url: URL) {
         Lib.Progress.show()
-        PinboardService.shared.post(url: url, tags: tags)
+        PinboardService.shared.post(url: url, tags: tags.map { $0.rawValue })
             .subscribe { event in
                 switch event {
                 case .error(let error):

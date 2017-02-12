@@ -1,6 +1,6 @@
 //
 //  ShareViewController.swift
-//  PinboardLetter
+//  PinboardStar
 //
 //  Created by mono on 2017/02/12.
 //  Copyright © 2017 mono. All rights reserved.
@@ -14,10 +14,11 @@ import RxSwift
 class ShareViewController: UIViewController, PinboardExtension {
     @IBOutlet weak var statusLabel: UILabel!
     let disposeBag = DisposeBag()
-    var tags: [PinboardTag] { return [PinboardTag.swift, PinboardTag.letter🐦] }
+    var tags: [PinboardTag] { return [PinboardTag.star🌟] }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         shareToPinboard()
     }
 }
+

@@ -12,7 +12,7 @@
         <!--Share View Controller-->
         <scene sceneID="ceB-am-kn3">
             <objects>
-                <viewController id="j1y-V4-xli" customClass="ShareViewController" customModule="PinboardLetter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="j1y-V4-xli" customClass="ShareViewController" customModule="PinboardStar" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8bI-gs-bmD"/>
                         <viewControllerLayoutGuide type="bottom" id="d5i-Ba-RvD"/>
@@ -21,12 +21,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DXb-eS-3WC">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VuN-Yy-E6C">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="36"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pinboardの#letterに投稿しています(　´･‿･｀)🐶" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bY7-a6-Zhs">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pinboardの#starに投稿しています(　´･‿･｀)🐶" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAq-VK-yxb">
                                         <rect key="frame" x="8" y="20" width="359" height="16"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -34,22 +33,22 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="bY7-a6-Zhs" secondAttribute="trailing" constant="8" id="9to-PE-v8r"/>
-                                    <constraint firstAttribute="bottom" secondItem="bY7-a6-Zhs" secondAttribute="bottom" id="CJW-JA-zMv"/>
-                                    <constraint firstItem="bY7-a6-Zhs" firstAttribute="leading" secondItem="DXb-eS-3WC" secondAttribute="leading" constant="8" id="P5C-QF-yH1"/>
-                                    <constraint firstItem="bY7-a6-Zhs" firstAttribute="top" secondItem="DXb-eS-3WC" secondAttribute="top" constant="20" id="X4S-ik-2RD"/>
+                                    <constraint firstItem="RAq-VK-yxb" firstAttribute="top" secondItem="VuN-Yy-E6C" secondAttribute="top" constant="20" id="FE4-kt-oiO"/>
+                                    <constraint firstItem="RAq-VK-yxb" firstAttribute="leading" secondItem="VuN-Yy-E6C" secondAttribute="leading" constant="8" id="L65-4E-eVi"/>
+                                    <constraint firstAttribute="bottom" secondItem="RAq-VK-yxb" secondAttribute="bottom" id="c7K-k5-wft"/>
+                                    <constraint firstAttribute="trailing" secondItem="RAq-VK-yxb" secondAttribute="trailing" constant="8" id="krm-Su-VJG"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="DXb-eS-3WC" firstAttribute="leading" secondItem="wbc-yd-nQP" secondAttribute="leading" id="X5v-A5-i95"/>
-                            <constraint firstAttribute="trailing" secondItem="DXb-eS-3WC" secondAttribute="trailing" id="a9Q-MH-TxU"/>
-                            <constraint firstItem="DXb-eS-3WC" firstAttribute="top" secondItem="wbc-yd-nQP" secondAttribute="top" id="dAj-oN-1DI"/>
+                            <constraint firstItem="VuN-Yy-E6C" firstAttribute="leading" secondItem="wbc-yd-nQP" secondAttribute="leading" id="QSD-Ej-vc6"/>
+                            <constraint firstAttribute="trailing" secondItem="VuN-Yy-E6C" secondAttribute="trailing" id="ca4-hD-G0A"/>
+                            <constraint firstItem="VuN-Yy-E6C" firstAttribute="top" secondItem="wbc-yd-nQP" secondAttribute="top" id="wbR-7y-jMo"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="statusLabel" destination="bY7-a6-Zhs" id="SbO-30-fSC"/>
+                        <outlet property="statusLabel" destination="RAq-VK-yxb" id="YCw-l6-0L5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CEy-Cv-SGf" userLabel="First Responder" sceneMemberID="firstResponder"/>

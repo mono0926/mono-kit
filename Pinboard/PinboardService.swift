@@ -21,6 +21,7 @@ public enum PinboardError: Error {
 public enum PinboardTag: String {
     case
     🐶monoKit🐶,
+    swift,
     letter🐦,
     star🌟
 }
