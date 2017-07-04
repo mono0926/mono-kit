@@ -74,17 +74,13 @@ public struct Logger {
         if Thread.isMainThread {
             return "main"
         }
-        else {
-            if let threadName = Thread.current.name, !threadName.isEmpty {
-                return threadName
-            }
-            else if let queueName = DispatchQueue.currentQueueLabel, !queueName.isEmpty {
-                return queueName
-            }
-            else {
-                return String(format: "[%p] ", Thread.current)
-            }
+        if let threadName = Thread.current.name, !threadName.isEmpty {
+            return threadName
         }
+        if let queueName = DispatchQueue.currentQueueLabel, !queueName.isEmpty {
+            return queueName
+        }
+        return String(format: "[%p] ", Thread.current)
     }
 }
 
