@@ -28,7 +28,7 @@ class UserRequestsTests: XCTestCase {
 
         let request = UserRequests.ApiToken(user: TestDataUtil.user, password: TestDataUtil.password)
         Session.shared.rx.response(request)
-            .subscribe { event in
+            .subscribe { [unowned self] event in
                 switch event {
                 case .error(let error):
                     XCTFail(String(describing: error))

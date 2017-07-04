@@ -1,0 +1,9 @@
+{
+  "commitish" : "4.1.0",
+  "iOS" : [
+    {
+      "hash" : "b65658a87bd4240ce0c81f191f8cb2142878dd2a8e010dc6826c3f8af5d9f97f",
+      "name" : "SWXMLHash"
+    }
+  ]
+}

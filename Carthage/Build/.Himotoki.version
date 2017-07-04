@@ -1,0 +1,9 @@
+{
+  "commitish" : "3.1.0",
+  "iOS" : [
+    {
+      "hash" : "140a46d81f9bf48658e07e03e2c03fbd406bf56ac4aaed6b162ed6df705fd697",
+      "name" : "Himotoki"
+    }
+  ]
+}

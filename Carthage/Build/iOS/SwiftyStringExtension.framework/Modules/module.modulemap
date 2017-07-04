@@ -1,3 +1,0 @@
-framework module SwiftyStringExtension {
-    header "SwiftyStringExtension-Swift.h"
-}

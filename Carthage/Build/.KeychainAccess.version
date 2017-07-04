@@ -1,0 +1,9 @@
+{
+  "commitish" : "v3.0.2",
+  "iOS" : [
+    {
+      "hash" : "28839ce6bc691b295d616f9f406013eba589d58e20bf7cc825eeee3a4210d2df",
+      "name" : "KeychainAccess"
+    }
+  ]
+}

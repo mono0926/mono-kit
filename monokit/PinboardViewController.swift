@@ -11,7 +11,6 @@ import UIKit
 import Pinboard
 import RxSwift
 import Lib
-import SwiftyStringExtension
 import APIKit
 
 class PinboardViewController: UIViewController {
@@ -31,7 +30,7 @@ class PinboardViewController: UIViewController {
     @IBAction func authenticateDidTap(_ sender: UIButton) {
         Lib.Progress.show()
         PinboardService.shared.authenticate(user: userTextField.text!, password: passwordTextField.text!)
-            .subscribe { event in
+            .subscribe { [unowned self] event in
                 switch event {
                 case .error(let error):
                     Lib.Progress.error(error)
@@ -52,7 +51,7 @@ class PinboardViewController: UIViewController {
             return
         }
         PinboardService.shared.post(url: URL(string: text)!, tags: [PinboardTag.star🌟.rawValue])
-            .subscribe { event in
+            .subscribe { [unowned self] event in
                 switch event {
                 case .error(let error):
                     Lib.Progress.error(error)
@@ -70,6 +69,7 @@ class PinboardViewController: UIViewController {
         guard let token = token else {
             return
         }
-        apiTokenLabel.text = token.replacingLast(token.count - 3, with: "*")
+        let n = token.count - 3
+        apiTokenLabel.text = token.dropLast(n) + String(repeating: "*", count: n)
     }
 }
