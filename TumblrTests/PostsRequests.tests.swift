@@ -26,11 +26,11 @@ class PostRequestsTests: XCTestCase {
     func testPostLink() {
         let expectation = self.expectation(description: #function)
 
-        AuthInfo.shared.test()
+        AuthInfo.shared.auth()
 
         let request = PostRequests.PostLink(url: URL(string: "https://mono0926.com")!)
         Session.shared.rx.response(request)
-            .subscribe { [unowned self] event in
+            .subscribe { event in
                 switch event {
                 case .error(let error):
                     XCTFail(String(describing: error))

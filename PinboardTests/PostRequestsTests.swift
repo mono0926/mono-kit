@@ -32,7 +32,7 @@ class PostRequestsTests: XCTestCase {
 
         let request = PostRequests.Add(url: URL(string: "https://mono0926.com")!, description: "monokit test", tags: ["test1, test2"])
         Session.shared.rx.response(request)
-            .subscribe { [unowned self] event in
+            .subscribe { event in
                 switch event {
                 case .error(let error):
                     XCTFail(String(describing: error))

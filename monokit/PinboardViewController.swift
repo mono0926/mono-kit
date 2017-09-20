@@ -51,7 +51,7 @@ class PinboardViewController: UIViewController {
             return
         }
         PinboardService.shared.post(url: URL(string: text)!, tags: [PinboardTag.star🌟.rawValue])
-            .subscribe { [unowned self] event in
+            .subscribe { event in
                 switch event {
                 case .error(let error):
                     Lib.Progress.error(error)
