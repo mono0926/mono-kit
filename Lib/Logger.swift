@@ -33,39 +33,80 @@ public struct Logger {
 
     fileprivate init() {}
 
-    public func info(_ message: @autoclosure () ->  Any?, functionName: StaticString = #function, fileName: StaticString = #file, lineNumber: Int = #line) {
-        doLog(message, logType: .info, functionName: functionName, fileName: fileName, lineNumber: lineNumber)
+    public func info(_ message: @autoclosure () ->  Any?,
+                     functionName: StaticString = #function,
+                     fileName: StaticString = #file,
+                     lineNumber: Int = #line) {
+        doLog(message, logType: .info,
+              functionName: functionName,
+              fileName: fileName,
+              lineNumber: lineNumber)
     }
 
-    public func debug(_ message: @autoclosure () ->  Any?, functionName: StaticString = #function, fileName: StaticString = #file, lineNumber: Int = #line) {
-        doLog(message, logType: .debug, functionName: functionName, fileName: fileName, lineNumber: lineNumber)
+    public func debug(_ message: @autoclosure () ->  Any?,
+                      functionName: StaticString = #function,
+                      fileName: StaticString = #file,
+                      lineNumber: Int = #line) {
+        doLog(message, logType:
+            .debug, functionName:
+            functionName, fileName: fileName,
+                          lineNumber: lineNumber)
     }
 
-    public func error(_ message: @autoclosure () ->  Any?, functionName: StaticString = #function, fileName: StaticString = #file, lineNumber: Int = #line) {
-        doLog(message, logType: .error, functionName: functionName, fileName: fileName, lineNumber: lineNumber)
+    public func error(_ message: @autoclosure () ->  Any?,
+                      functionName: StaticString = #function,
+                      fileName: StaticString = #file,
+                      lineNumber: Int = #line) {
+        doLog(message, logType: .error,
+              functionName: functionName,
+              fileName: fileName,
+              lineNumber: lineNumber)
     }
 
-    public func fault(_ message: @autoclosure () ->  Any?, functionName: StaticString = #function, fileName: StaticString = #file, lineNumber: Int = #line) {
-        doLog(message, logType: .fault, functionName: functionName, fileName: fileName, lineNumber: lineNumber)
+    public func fault(_ message: @autoclosure () ->  Any?,
+                      functionName: StaticString = #function,
+                      fileName: StaticString = #file,
+                      lineNumber: Int = #line) {
+        doLog(message, logType: .fault,
+              functionName: functionName,
+              fileName: fileName,
+              lineNumber: lineNumber)
     }
 
-    public func `default`(_ message: @autoclosure () ->  Any?, functionName: StaticString = #function, fileName: StaticString = #file, lineNumber: Int = #line) {
-        doLog(message, logType: .default, functionName: functionName, fileName: fileName, lineNumber: lineNumber)
+    public func `default`(_ message: @autoclosure () ->  Any?,
+                          functionName: StaticString = #function,
+                          fileName: StaticString = #file,
+                          lineNumber: Int = #line) {
+        doLog(message, logType: .default,
+              functionName: functionName,
+              fileName: fileName,
+              lineNumber: lineNumber)
     }
 
-    private func doLog(_ message: @autoclosure () ->  Any?, logType: OSLogType, functionName: StaticString, fileName: StaticString, lineNumber: Int) {
+    private func doLog(_ message: @autoclosure () ->  Any?,
+                       logType: OSLogType,
+                       functionName: StaticString,
+                       fileName: StaticString,
+                       lineNumber: Int) {
         let staticSelf = type(of: self)
         let log = staticSelf.log
         guard log.isEnabled(type: logType) else { return }
-        guard let output = staticSelf.buildOutput(message, logType: logType, functionName: functionName, fileName: fileName, lineNumber: lineNumber) else { return }
-        os_log("%@", log: log, type: logType, output)
+        guard let output = staticSelf.buildOutput(message,
+                                                  logType: logType,
+                                                  functionName: functionName,
+                                                  fileName: fileName,
+                                                  lineNumber: lineNumber) else { return }
+        os_log("%@",
+               log: log,
+               type: logType,
+               output)
     }
 
     static func buildOutput(_ message: @autoclosure () ->  Any?,
-                             logType: OSLogType,
-                             functionName: StaticString,
-                             fileName: StaticString,
-                             lineNumber: Int) -> String? {
+                            logType: OSLogType,
+                            functionName: StaticString,
+                            fileName: StaticString,
+                            lineNumber: Int) -> String? {
         guard let message = message() else { return nil }
         return "[\(logType)] [\(threadName)] [\((String(describing: fileName) as NSString).lastPathComponent):\(lineNumber)] \(functionName) > \(message)"
     }
@@ -91,3 +132,4 @@ extension DispatchQueue {
 }
 
 public let logger = Logger()
+
