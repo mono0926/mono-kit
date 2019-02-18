@@ -21,4 +21,3 @@ class ShareViewController: UIViewController, PinboardExtension {
         shareToPinboard()
     }
 }
-

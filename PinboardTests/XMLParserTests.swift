@@ -32,5 +32,5 @@ class XMLParserTests: XCTestCase {
         XCTAssertNotNil(xml)
         XCTAssertEqual(xml!["result"].element!.text, "(　´･‿･｀)")
     }
-    
+
 }
